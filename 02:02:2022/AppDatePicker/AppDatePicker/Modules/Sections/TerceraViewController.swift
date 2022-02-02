@@ -50,6 +50,7 @@ class TerceraViewController: UIViewController {
 }
 
 extension TerceraViewController: UIPickerViewDataSource {
+	
 	func numberOfComponents(in pickerView: UIPickerView) -> Int {
 		return 1
 	}
@@ -68,6 +69,7 @@ extension TerceraViewController: UIPickerViewDataSource {
 }
 
 extension TerceraViewController: UIPickerViewDelegate {
+	
 	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 		switch pickerView.tag {
 		case 0:
