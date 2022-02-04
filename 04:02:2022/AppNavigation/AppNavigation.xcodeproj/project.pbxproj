@@ -13,6 +13,9 @@
 		7C33631C27AD24290085CA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C33631A27AD24290085CA7A /* Main.storyboard */; };
 		7C33631E27AD242B0085CA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C33631D27AD242B0085CA7A /* Assets.xcassets */; };
 		7C33632127AD242B0085CA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C33631F27AD242B0085CA7A /* LaunchScreen.storyboard */; };
+		7C33632D27AD33100085CA7A /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33632C27AD33100085CA7A /* SegundaViewController.swift */; };
+		7C33632F27AD331B0085CA7A /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33632E27AD331B0085CA7A /* TerceraViewController.swift */; };
+		7C33633127AD33250085CA7A /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33633027AD33250085CA7A /* CuartaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7C33631D27AD242B0085CA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C33632027AD242B0085CA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C33632227AD242B0085CA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C33632C27AD33100085CA7A /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		7C33632E27AD331B0085CA7A /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
+		7C33633027AD33250085CA7A /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		7C33631327AD24290085CA7A /* AppNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				7C33631427AD24290085CA7A /* AppDelegate.swift */,
-				7C33631627AD24290085CA7A /* SceneDelegate.swift */,
-				7C33631827AD24290085CA7A /* ViewController.swift */,
-				7C33631A27AD24290085CA7A /* Main.storyboard */,
-				7C33631D27AD242B0085CA7A /* Assets.xcassets */,
+				7C33632A27AD32AE0085CA7A /* Modules */,
+				7C33632927AD32910085CA7A /* Views */,
+				7C33632827AD328A0085CA7A /* CoreApp */,
 				7C33631F27AD242B0085CA7A /* LaunchScreen.storyboard */,
+				7C33631D27AD242B0085CA7A /* Assets.xcassets */,
 				7C33632227AD242B0085CA7A /* Info.plist */,
 			);
 			path = AppNavigation;
+			sourceTree = "<group>";
+		};
+		7C33632827AD328A0085CA7A /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				7C33631427AD24290085CA7A /* AppDelegate.swift */,
+				7C33631627AD24290085CA7A /* SceneDelegate.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		7C33632927AD32910085CA7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C33631A27AD24290085CA7A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C33632A27AD32AE0085CA7A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7C33632B27AD32BE0085CA7A /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7C33632B27AD32BE0085CA7A /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				7C33631827AD24290085CA7A /* ViewController.swift */,
+				7C33632C27AD33100085CA7A /* SegundaViewController.swift */,
+				7C33632E27AD331B0085CA7A /* TerceraViewController.swift */,
+				7C33633027AD33250085CA7A /* CuartaViewController.swift */,
+			);
+			path = Sections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C33632F27AD331B0085CA7A /* TerceraViewController.swift in Sources */,
+				7C33632D27AD33100085CA7A /* SegundaViewController.swift in Sources */,
+				7C33633127AD33250085CA7A /* CuartaViewController.swift in Sources */,
 				7C33631927AD24290085CA7A /* ViewController.swift in Sources */,
 				7C33631527AD24290085CA7A /* AppDelegate.swift in Sources */,
 				7C33631727AD24290085CA7A /* SceneDelegate.swift in Sources */,

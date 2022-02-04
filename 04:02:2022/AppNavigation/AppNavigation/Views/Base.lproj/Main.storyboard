@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Segunda View Controller-->
         <scene sceneID="9wE-HB-cDq">
             <objects>
-                <viewController id="m2p-lt-UvN" sceneMemberID="viewController">
+                <viewController id="m2p-lt-UvN" customClass="SegundaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xhf-Lj-lDb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="1921.7391304347827" y="99.776785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Tercera View Controller-->
         <scene sceneID="qdo-C8-GdL">
             <objects>
-                <viewController id="ehs-Yb-TTV" sceneMemberID="viewController">
+                <viewController id="ehs-Yb-TTV" customClass="TerceraViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gha-VN-iyj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,10 +217,10 @@
             </objects>
             <point key="canvasLocation" x="2770" y="100"/>
         </scene>
-        <!--View Controller-->
+        <!--Cuarta View Controller-->
         <scene sceneID="NoZ-ah-pZk">
             <objects>
-                <viewController id="UV3-na-9yK" sceneMemberID="viewController">
+                <viewController id="UV3-na-9yK" customClass="CuartaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GO3-cl-XB4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
