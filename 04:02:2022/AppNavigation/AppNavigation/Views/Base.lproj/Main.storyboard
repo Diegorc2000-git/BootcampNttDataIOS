@@ -37,7 +37,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="m2p-lt-UvN" kind="show" id="6LJ-Uq-ayq"/>
+                                    <segue destination="m2p-lt-UvN" kind="show" identifier="segueV2" id="6LJ-Uq-ayq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,6 +45,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="n86-ux-mzd"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="IpA-V7-wiz" id="4QA-T1-Nh9"/>
+                        <outlet property="surnameTextField" destination="Rgy-Sw-u1c" id="tfq-Yx-3Wu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

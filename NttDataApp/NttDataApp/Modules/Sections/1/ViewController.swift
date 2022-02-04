@@ -29,6 +29,7 @@ class ViewController: UIViewController {
 	@IBAction func dateTextFieldAction(_ sender: UITextField) {
 		let pickerDateView = UIDatePicker()
 		pickerDateView.datePickerMode = .dateAndTime
+		pickerDateView.preferredDatePickerStyle = .wheels
 		dateTextField.inputView = pickerDateView
 		pickerDateView.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
 	}
@@ -36,6 +37,7 @@ class ViewController: UIViewController {
 	@IBAction func dateReturnTextFieldAction(_ sender: UITextField) {
 		let pickerDateReturnView = UIDatePicker()
 		pickerDateReturnView.datePickerMode = .dateAndTime
+		pickerDateReturnView.preferredDatePickerStyle = .wheels
 		dateReturnTextField.inputView = pickerDateReturnView
 		pickerDateReturnView.addTarget(self, action: #selector(dateReturnPickerValueChanged(_:)), for: .valueChanged)
 	}
@@ -74,6 +76,10 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		configureView()
+	}
+	
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		self.view.endEditing(true)
 	}
 	
 	@objc
