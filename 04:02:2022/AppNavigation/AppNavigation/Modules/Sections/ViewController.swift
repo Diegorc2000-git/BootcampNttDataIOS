@@ -31,11 +31,15 @@ class ViewController: UIViewController {
 				
 			} else {
 				present(displayAlertVC(myTitle: "Hey",
-									   myMessage: "Tienes que rellenar los campos"),
+									   myMessage: "Tienes que rellenar todos los campos"),
 						animated: true,
 						completion: nil)
 			}
 		}
+	}
+	
+	@IBAction func cerrarVCs(segue: UIStoryboardSegue) {
+		print("Logout completado")
 	}
 
 }
