@@ -115,6 +115,10 @@ class ViewController: UIViewController {
 		self.buttonContinue.layer.cornerRadius = 20
 		
 	}
+	
+	@IBAction func cerrarVCs(segue: UIStoryboardSegue) {
+		print("Logout completado")
+	}
 
 }
 
