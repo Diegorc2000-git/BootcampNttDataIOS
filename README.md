@@ -33,4 +33,3 @@
 # NTTDataApp
 
 - Aplicacion con todos los conocimientos aprendidos [IP]
-- 
