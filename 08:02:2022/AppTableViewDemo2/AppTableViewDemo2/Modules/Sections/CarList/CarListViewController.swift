@@ -21,6 +21,7 @@ class CarListViewController: UIViewController {
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
+		self.title = "Lista de coches"
 		self.presenter?.setArrayData()
 		setupTableView()
 	}

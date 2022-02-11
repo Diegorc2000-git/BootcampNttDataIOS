@@ -1,15 +1,15 @@
 //
 //  AppCoordinator.swift
-//  AppIntroTableView
+//  AppPart4
 //
-//  Created by Diego Rodriguez Casillas on 7/2/22.
+//  Created by Diego Rodriguez Casillas on 9/2/22.
 //
 
 import Foundation
 import UIKit
 
 protocol AppCoordinatorProtocol {
-	func showInitialViewController(window: UIWindow)
+	
 }
 
 final class AppCoordinator: AppCoordinatorProtocol {
@@ -18,7 +18,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
 	
 	internal func showInitialViewController(window: UIWindow) {
 		self.customUI()
-		initialViewController = HomeCoordinator.view()
+		initialViewController = TabBarCoordinator.view()
 		window.rootViewController = initialViewController
 		window.makeKeyAndVisible()
 	}
@@ -27,14 +27,18 @@ final class AppCoordinator: AppCoordinatorProtocol {
 		let navBar = UINavigationBar.appearance()
 		let tabBar = UITabBar.appearance()
 		
-		navBar.barTintColor = UIColor.black
-		tabBar.barTintColor = UIColor.black
+		navBar.barTintColor = UIColor.white
+		tabBar.barTintColor = UIColor.white
 		navBar.tintColor = UIColor.white
 		tabBar.tintColor = UIColor.white
-		navBar.barStyle = .default
-		tabBar.barStyle = .default
-		
+		navBar.barStyle = .black
+		tabBar.barStyle = .black
+		navBar.backgroundColor = UIColor.white
+		tabBar.backgroundColor = UIColor.white
+		navBar.isTranslucent = false
+		tabBar.isTranslucent = false
 		navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 		
 	}
+	
 }

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="AppPart4" customModuleProvider="target">
+            <connections>
+                <outlet property="email" destination="Zk0-l5-QSU" id="9Qr-Gi-TfS"/>
+                <outlet property="password" destination="KEg-fr-mjz" id="M5Z-mP-awH"/>
+                <outlet property="passwordVerification" destination="k34-oy-kdq" id="fHk-OS-te5"/>
+                <outlet property="secondName" destination="xpD-Hu-w64" id="aWF-tY-bzT"/>
+                <outlet property="signUpButton" destination="jYU-fN-2sO" id="O48-Gu-nZR"/>
+                <outlet property="userName" destination="suo-mj-DYq" id="blT-tv-aho"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="signUp" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifm-V9-0nl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signupImg" translatesAutoresizingMaskIntoConstraints="NO" id="Fzw-u9-a8w">
+                            <rect key="frame" x="132" y="72" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="bEB-5O-92H"/>
+                                <constraint firstAttribute="height" constant="150" id="tC4-U0-YLL"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2Y-o9-2aU">
+                            <rect key="frame" x="0.0" y="250" width="414" height="412"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-Mf-eOI">
+                                    <rect key="frame" x="72" y="24" width="270" height="254"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu nombre" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="suo-mj-DYq">
+                                            <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu apellido" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xpD-Hu-w64">
+                                            <rect key="frame" x="0.0" y="55" width="270" height="34"/>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-l5-QSU">
+                                            <rect key="frame" x="0.0" y="110" width="270" height="34"/>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-fr-mjz">
+                                            <rect key="frame" x="0.0" y="165" width="270" height="34"/>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vuelve a introduce tu contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="k34-oy-kdq">
+                                            <rect key="frame" x="0.0" y="220" width="270" height="34"/>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYU-fN-2sO">
+                                    <rect key="frame" x="72" y="302" width="270" height="31"/>
+                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="31" id="xRI-rN-3ZI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="SignUp">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="signUpPressed:" destination="-1" eventType="touchUpInside" id="Pzx-Sg-cxt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="jYU-fN-2sO" firstAttribute="top" secondItem="IxI-Mf-eOI" secondAttribute="bottom" constant="24" id="2Ge-Ez-5YZ"/>
+                                <constraint firstItem="jYU-fN-2sO" firstAttribute="leading" secondItem="k2Y-o9-2aU" secondAttribute="leading" constant="72" id="SXX-DQ-R3H"/>
+                                <constraint firstItem="IxI-Mf-eOI" firstAttribute="leading" secondItem="k2Y-o9-2aU" secondAttribute="leading" constant="72" id="Y3Z-zo-2tL"/>
+                                <constraint firstItem="IxI-Mf-eOI" firstAttribute="top" secondItem="k2Y-o9-2aU" secondAttribute="top" constant="24" id="dVc-90-dmN"/>
+                                <constraint firstAttribute="trailing" secondItem="IxI-Mf-eOI" secondAttribute="trailing" constant="72" id="e6w-wf-Dsb"/>
+                                <constraint firstAttribute="trailing" secondItem="jYU-fN-2sO" secondAttribute="trailing" constant="72" id="geX-fA-Qia"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Fzw-u9-a8w" firstAttribute="centerX" secondItem="Ifm-V9-0nl" secondAttribute="centerX" id="EWz-FR-Ia1"/>
+                        <constraint firstAttribute="bottom" secondItem="k2Y-o9-2aU" secondAttribute="bottom" constant="190" id="Lfc-7P-Cla"/>
+                        <constraint firstItem="Fzw-u9-a8w" firstAttribute="top" secondItem="Ifm-V9-0nl" secondAttribute="top" constant="72" id="ReI-FZ-eup"/>
+                        <constraint firstItem="k2Y-o9-2aU" firstAttribute="leading" secondItem="Ifm-V9-0nl" secondAttribute="leading" id="awk-EY-yfS"/>
+                        <constraint firstItem="k2Y-o9-2aU" firstAttribute="top" secondItem="Fzw-u9-a8w" secondAttribute="bottom" constant="28" id="cRB-ED-mby"/>
+                        <constraint firstAttribute="trailing" secondItem="k2Y-o9-2aU" secondAttribute="trailing" id="uNv-td-fC2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ifm-V9-0nl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DbS-x9-4TV"/>
+                <constraint firstItem="Ifm-V9-0nl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PiA-dx-6P4"/>
+                <constraint firstAttribute="trailing" secondItem="Ifm-V9-0nl" secondAttribute="trailing" id="YOz-cb-R1D"/>
+                <constraint firstAttribute="bottom" secondItem="Ifm-V9-0nl" secondAttribute="bottom" id="gs0-05-BK0"/>
+                <constraint firstItem="Ifm-V9-0nl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nIU-eY-E5H"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="signupImg" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
