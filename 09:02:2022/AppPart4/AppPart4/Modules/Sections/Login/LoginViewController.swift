@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
 	
 	func setupBackground() {
 		let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-		backgroundImage.image = UIImage(named: "backgroundLogin&SignUp")
+		backgroundImage.image = UIImage(named: "backgroundWhite")
 		backgroundImage.contentMode = UIView.ContentMode.scaleToFill
 		self.view.insertSubview(backgroundImage, at: 0)
 	}

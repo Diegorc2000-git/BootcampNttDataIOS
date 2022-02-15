@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C67D57727BAB33200AEEC70 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67D57627BAB33200AEEC70 /* RegistrationCoordinator.swift */; };
 		7CEBFD3127B41BF6004136FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBFD3027B41BF6004136FC /* AppDelegate.swift */; };
 		7CEBFD3A27B41BF8004136FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CEBFD3927B41BF8004136FC /* Assets.xcassets */; };
 		7CEBFD3D27B41BF8004136FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEBFD3B27B41BF8004136FC /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C67D57627BAB33200AEEC70 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		7CEBFD2D27B41BF6004136FC /* AppPart4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPart4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEBFD3027B41BF6004136FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CEBFD3927B41BF8004136FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				7CEBFD4F27B4211B004136FC /* TabBarCoordinator.swift */,
 				7CEBFD8727B65348004136FC /* TabBarViewController.swift */,
 				7CEBFD8827B65348004136FC /* TabBarViewController.xib */,
+				7C67D57627BAB33200AEEC70 /* RegistrationCoordinator.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				7CEBFD6D27B57EB2004136FC /* StartPresenter.swift in Sources */,
 				7CEBFD5727B42334004136FC /* LoginCoordinator.swift in Sources */,
 				7CEBFD4927B41FE8004136FC /* AppCoordinator.swift in Sources */,
+				7C67D57727BAB33200AEEC70 /* RegistrationCoordinator.swift in Sources */,
 				7CEBFD5F27B547A8004136FC /* SignUpViewController.swift in Sources */,
 				7CEBFD7D27B58465004136FC /* DOSViewController.swift in Sources */,
 				7CEBFD8027B5847F004136FC /* UNOCoordinator.swift in Sources */,

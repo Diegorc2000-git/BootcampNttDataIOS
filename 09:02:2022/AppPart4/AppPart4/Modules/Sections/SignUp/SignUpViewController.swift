@@ -12,6 +12,7 @@ class SignUpViewController: UIViewController {
 	var presenter: SignUpPresenterProtocol?
 	
 	// MARK: - Outlet
+	@IBOutlet weak var backButton: UIButton!
 	@IBOutlet weak var userName: UITextField!
 	@IBOutlet weak var secondName: UITextField!
 	@IBOutlet weak var email: UITextField!
@@ -21,6 +22,9 @@ class SignUpViewController: UIViewController {
 	
 	// MARK: - Outlet Action
 	@IBAction func signUpPressed(_ sender: Any) {
+		navigationController?.popViewController(animated: true)
+	}
+	@IBAction func backButtonPressed(_ sender: Any) {
 		navigationController?.popViewController(animated: true)
 	}
 	
@@ -35,7 +39,7 @@ class SignUpViewController: UIViewController {
 	
 	func setupBackground() {
 		let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-		backgroundImage.image = UIImage(named: "backgroundLogin&SignUp")
+		backgroundImage.image = UIImage(named: "backgroundWhite")
 		backgroundImage.contentMode = UIView.ContentMode.scaleToFill
 		self.view.insertSubview(backgroundImage, at: 0)
 	}
