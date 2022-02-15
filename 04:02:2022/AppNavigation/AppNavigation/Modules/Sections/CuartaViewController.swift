@@ -46,7 +46,6 @@ class CuartaViewController: UIViewController {
 		return mailComp
 	}
 	
-	
     override func viewDidLoad() {
         super.viewDidLoad()
 

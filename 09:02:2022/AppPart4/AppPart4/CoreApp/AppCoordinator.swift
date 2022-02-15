@@ -40,5 +40,4 @@ final class AppCoordinator: AppCoordinatorProtocol {
 		navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 		
 	}
-	
 }

@@ -19,7 +19,6 @@ class SegundaViewController: UIViewController {
 	@IBOutlet weak var imagenCarImageView: UIImageView!
 	@IBOutlet weak var seleccionCarPickerView: UIPickerView!
 	
-	
     override func viewDidLoad() {
         super.viewDidLoad()
 

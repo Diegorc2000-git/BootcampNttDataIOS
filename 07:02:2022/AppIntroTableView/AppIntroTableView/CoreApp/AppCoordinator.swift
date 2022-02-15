@@ -18,7 +18,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
 	
 	internal func showInitialViewController(window: UIWindow) {
 		self.customUI()
-		initialViewController = HomeCoordinator.view()
+		initialViewController = .view()
 		window.rootViewController = initialViewController
 		window.makeKeyAndVisible()
 	}

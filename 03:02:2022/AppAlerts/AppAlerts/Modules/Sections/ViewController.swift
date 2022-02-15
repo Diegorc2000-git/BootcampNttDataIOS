@@ -30,7 +30,6 @@ class ViewController: UIViewController {
 										myMessage: "Este alert controller es la presentación por defecto"),
 						 animated: true,
 						 completion: nil)
-
 		case 1:
 			let alertVC = UIAlertController(title: "Alert Controller TextField", message: "Este alert controller tiene un TextField", preferredStyle: .alert)
 			let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
