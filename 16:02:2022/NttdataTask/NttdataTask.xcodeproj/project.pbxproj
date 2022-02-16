@@ -21,6 +21,12 @@
 		7C18DC4627BD0F5A002EDDD7 /* CarListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC4527BD0F5A002EDDD7 /* CarListCoordinator.swift */; };
 		7C23EA4D27BD154B00606C8D /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA4B27BD154B00606C8D /* CarCell.swift */; };
 		7C23EA4E27BD154B00606C8D /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C23EA4C27BD154B00606C8D /* CarCell.xib */; };
+		7C23EA5127BD2F4300606C8D /* DetailCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA4F27BD2F4300606C8D /* DetailCarViewController.swift */; };
+		7C23EA5227BD2F4300606C8D /* DetailCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C23EA5027BD2F4300606C8D /* DetailCarViewController.xib */; };
+		7C23EA5527BD2F6C00606C8D /* CarDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5427BD2F6C00606C8D /* CarDetailCoordinator.swift */; };
+		7C23EA5827BD312600606C8D /* CarListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5727BD312600606C8D /* CarListPresenter.swift */; };
+		7C23EA5B27BD33EE00606C8D /* CarListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5A27BD33EE00606C8D /* CarListRouter.swift */; };
+		7C23EA5D27BD38C600606C8D /* DetailCarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5C27BD38C600606C8D /* DetailCarPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		7C18DC4527BD0F5A002EDDD7 /* CarListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListCoordinator.swift; sourceTree = "<group>"; };
 		7C23EA4B27BD154B00606C8D /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		7C23EA4C27BD154B00606C8D /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
+		7C23EA4F27BD2F4300606C8D /* DetailCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarViewController.swift; sourceTree = "<group>"; };
+		7C23EA5027BD2F4300606C8D /* DetailCarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCarViewController.xib; sourceTree = "<group>"; };
+		7C23EA5427BD2F6C00606C8D /* CarDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailCoordinator.swift; sourceTree = "<group>"; };
+		7C23EA5727BD312600606C8D /* CarListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListPresenter.swift; sourceTree = "<group>"; };
+		7C23EA5A27BD33EE00606C8D /* CarListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListRouter.swift; sourceTree = "<group>"; };
+		7C23EA5C27BD38C600606C8D /* DetailCarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +139,10 @@
 				7C23EA4A27BD151000606C8D /* Cell */,
 				7C18DC4127BD0F46002EDDD7 /* CarListViewController.swift */,
 				7C18DC4227BD0F46002EDDD7 /* CarListViewController.xib */,
+				7C23EA5727BD312600606C8D /* CarListPresenter.swift */,
+				7C23EA5A27BD33EE00606C8D /* CarListRouter.swift */,
 				7C18DC4527BD0F5A002EDDD7 /* CarListCoordinator.swift */,
+				7C23EA5627BD30BD00606C8D /* CarDetail */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -169,6 +184,17 @@
 				7C23EA4C27BD154B00606C8D /* CarCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		7C23EA5627BD30BD00606C8D /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7C23EA5427BD2F6C00606C8D /* CarDetailCoordinator.swift */,
+				7C23EA4F27BD2F4300606C8D /* DetailCarViewController.swift */,
+				7C23EA5C27BD38C600606C8D /* DetailCarPresenter.swift */,
+				7C23EA5027BD2F4300606C8D /* DetailCarViewController.xib */,
+			);
+			path = CarDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +261,7 @@
 				7C18DC2227BCFCBA002EDDD7 /* Assets.xcassets in Resources */,
 				7C23EA4E27BD154B00606C8D /* CarCell.xib in Resources */,
 				7C18DC4427BD0F46002EDDD7 /* CarListViewController.xib in Resources */,
+				7C23EA5227BD2F4300606C8D /* DetailCarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +277,13 @@
 				7C18DC4627BD0F5A002EDDD7 /* CarListCoordinator.swift in Sources */,
 				7C18DC4027BD05F1002EDDD7 /* CarModel.swift in Sources */,
 				7C18DC3727BCFFB7002EDDD7 /* TabBarViewController.swift in Sources */,
+				7C23EA5D27BD38C600606C8D /* DetailCarPresenter.swift in Sources */,
+				7C23EA5827BD312600606C8D /* CarListPresenter.swift in Sources */,
 				7C18DC1927BCFCB7002EDDD7 /* AppDelegate.swift in Sources */,
 				7C23EA4D27BD154B00606C8D /* CarCell.swift in Sources */,
+				7C23EA5127BD2F4300606C8D /* DetailCarViewController.swift in Sources */,
+				7C23EA5B27BD33EE00606C8D /* CarListRouter.swift in Sources */,
+				7C23EA5527BD2F6C00606C8D /* CarDetailCoordinator.swift in Sources */,
 				7C18DC3A27BCFFD8002EDDD7 /* TabBarHomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

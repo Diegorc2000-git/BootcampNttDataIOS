@@ -14,6 +14,19 @@ final class CarListCoordinator {
 	}
 	
 	static func view() -> CarListViewController {
-		CarListViewController()
+		let vc = CarListViewController()
+		vc.presenter = presenter(vc: vc)
+		return vc
+	}
+	
+	static func presenter(vc: CarListViewController) -> CarListPresenterProtocol {
+		let presenter = CarListPresenter(vc: vc)
+		presenter.router = router(vc: vc)
+		return presenter
+	}
+	
+	static func router(vc: CarListViewController) -> CarListRouterProtocol {
+		let router = CarListRouter(vc: vc)
+		return router
 	}
 }

@@ -7,25 +7,24 @@
 
 import UIKit
 
-class CarListViewController: UIViewController {
+protocol CarListViewProtocol {
+	func reloadDataInView()
+}
 
-	// MARK: - Variables
-	var arrayCars: [ArrayCar] = []
+class CarListViewController: UIViewController {
+	
+	// MARK: - ID
+	var presenter: CarListPresenterProtocol?
 	
 	// MARK: - IBOutlet
 	@IBOutlet weak var carListTableView: UITableView!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		if let model = CarsModel.stubbedCars {
-			self.arrayCars = model
-		}
+		self.title = "Coches"
+		self.presenter?.viewDidLoadInPresent()
 		self.setupTableView()
     }
-	
-	override func viewWillAppear(_ animated: Bool) {
-		self.carListTableView.reloadData()
-	}
 	
 	private func setupTableView() {
 		self.carListTableView.delegate = self
@@ -35,19 +34,35 @@ class CarListViewController: UIViewController {
 
 }
 
+extension CarListViewController: CarListViewProtocol {
+	
+	func reloadDataInView() {
+		self.carListTableView.reloadData()
+	}
+	
+}
+
 extension CarListViewController: UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return self.arrayCars.count
+		return self.presenter?.numberOfRowInSection() ?? 0
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let carCell = self.carListTableView.dequeueReusableCell(withIdentifier: "CarCell", for: indexPath) as! CarCell
-		carCell.configCell(data: self.arrayCars[indexPath.row])
+		if let modelData = self.presenter?.informationCell(indexPath: indexPath.row) {
+			carCell.configCell(data: modelData)
+		}
 		return carCell
 	}
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		return 100
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if let modelData = self.presenter?.informationCell(indexPath: indexPath.row) {
+			self.presenter?.showDetailCar(dto: modelData)
+		}
 	}
 }
