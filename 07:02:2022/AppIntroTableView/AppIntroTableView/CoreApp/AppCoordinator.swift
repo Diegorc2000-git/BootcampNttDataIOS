@@ -18,7 +18,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
 	
 	internal func showInitialViewController(window: UIWindow) {
 		self.customUI()
-		initialViewController = .view()
+		initialViewController = HomeCoordinator.view()
 		window.rootViewController = initialViewController
 		window.makeKeyAndVisible()
 	}
@@ -26,14 +26,14 @@ final class AppCoordinator: AppCoordinatorProtocol {
 	private func customUI() {
 		let navBar = UINavigationBar.appearance()
 		let tabBar = UITabBar.appearance()
-		
-		navBar.barTintColor = UIColor.black
-		tabBar.barTintColor = UIColor.black
+
+		navBar.backgroundColor = UIColor.black
+		tabBar.backgroundColor = UIColor.black
 		navBar.tintColor = UIColor.white
 		tabBar.tintColor = UIColor.white
 		navBar.barStyle = .default
 		tabBar.barStyle = .default
-		
+
 		navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 		
 	}

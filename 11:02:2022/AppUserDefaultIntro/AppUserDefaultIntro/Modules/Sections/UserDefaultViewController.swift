@@ -19,6 +19,7 @@ class UserDefaultViewController: UIViewController {
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var lastUpdateLabel: UILabel!
 	
+	
 	var existPhoto = false
 	
 	// MARK: - Actions
@@ -98,6 +99,10 @@ class UserDefaultViewController: UIViewController {
 		self.imageView.isUserInteractionEnabled = true // Habilitamos la interaccion con la imagen
 		let tapGR = UITapGestureRecognizer(target: self, action: #selector(showActionGesture))
 		self.imageView.addGestureRecognizer(tapGR) // Habilito la imagen, creo un gestor de reconocimiento y le meto gestor de reconocimiento a la imagen
+		self.saveInfo.setTitle("Guardar Datos".uppercased(), for: .normal)
+		self.saveInfo.layer.cornerRadius = 10
+		self.updateInfo.setTitle("Update Info".uppercased(), for: .normal)
+		self.updateInfo.layer.cornerRadius = 10
     }
 	
 	// MARK: - Private Methods
@@ -158,7 +163,6 @@ extension UserDefaultViewController: UIImagePickerControllerDelegate, UINavigati
 	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
 		dismiss(animated: true, completion: nil)
 	}
-	
 }
 
 class Utils {
