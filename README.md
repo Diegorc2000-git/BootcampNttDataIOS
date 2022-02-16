@@ -56,6 +56,13 @@
 
 ![AppUserDefault](https://user-images.githubusercontent.com/85167928/154030895-ce794a53-69bf-44f4-ba95-6196e89186cb.png)
 
+# NttdataTask
+
+- Creacion de tabla de coches con un json
+- imagen redondeada y iconos en la navigation Bar
+
+![Captura de pantalla 2022-02-16 a las 12 39 39](https://user-images.githubusercontent.com/85167928/154257566-fcf48626-bc82-45dd-9d7d-24af0bf8dc93.png)
+
 # NTTDataApp
 
 - Aplicacion con todos los conocimientos aprendidos [WIP]
