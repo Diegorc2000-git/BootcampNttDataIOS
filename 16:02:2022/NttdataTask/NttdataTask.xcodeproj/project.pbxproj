@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		7C18DC1927BCFCB7002EDDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC1827BCFCB7002EDDD7 /* AppDelegate.swift */; };
-		7C18DC1B27BCFCB7002EDDD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC1A27BCFCB7002EDDD7 /* SceneDelegate.swift */; };
-		7C18DC1D27BCFCB7002EDDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC1C27BCFCB7002EDDD7 /* ViewController.swift */; };
-		7C18DC2027BCFCB7002EDDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C18DC1E27BCFCB7002EDDD7 /* Main.storyboard */; };
 		7C18DC2227BCFCBA002EDDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C18DC2127BCFCBA002EDDD7 /* Assets.xcassets */; };
 		7C18DC2527BCFCBA002EDDD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C18DC2327BCFCBA002EDDD7 /* LaunchScreen.storyboard */; };
+		7C18DC2E27BCFDE2002EDDD7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC2D27BCFDE2002EDDD7 /* AppCoordinator.swift */; };
+		7C18DC3727BCFFB7002EDDD7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC3527BCFFB7002EDDD7 /* TabBarViewController.swift */; };
+		7C18DC3827BCFFB7002EDDD7 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C18DC3627BCFFB7002EDDD7 /* TabBarViewController.xib */; };
+		7C18DC3A27BCFFD8002EDDD7 /* TabBarHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC3927BCFFD8002EDDD7 /* TabBarHomeCoordinator.swift */; };
+		7C18DC3D27BD03E4002EDDD7 /* carJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C18DC3C27BD03E4002EDDD7 /* carJson.json */; };
+		7C18DC4027BD05F1002EDDD7 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC3F27BD05F1002EDDD7 /* CarModel.swift */; };
+		7C18DC4327BD0F46002EDDD7 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC4127BD0F46002EDDD7 /* CarListViewController.swift */; };
+		7C18DC4427BD0F46002EDDD7 /* CarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C18DC4227BD0F46002EDDD7 /* CarListViewController.xib */; };
+		7C18DC4627BD0F5A002EDDD7 /* CarListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18DC4527BD0F5A002EDDD7 /* CarListCoordinator.swift */; };
+		7C23EA4D27BD154B00606C8D /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA4B27BD154B00606C8D /* CarCell.swift */; };
+		7C23EA4E27BD154B00606C8D /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C23EA4C27BD154B00606C8D /* CarCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C18DC1527BCFCB7002EDDD7 /* NttdataTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NttdataTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C18DC1827BCFCB7002EDDD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C18DC1A27BCFCB7002EDDD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C18DC1C27BCFCB7002EDDD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C18DC1F27BCFCB7002EDDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C18DC2127BCFCBA002EDDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C18DC2427BCFCBA002EDDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C18DC2627BCFCBA002EDDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C18DC2D27BCFDE2002EDDD7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7C18DC3527BCFFB7002EDDD7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7C18DC3627BCFFB7002EDDD7 /* TabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		7C18DC3927BCFFD8002EDDD7 /* TabBarHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHomeCoordinator.swift; sourceTree = "<group>"; };
+		7C18DC3C27BD03E4002EDDD7 /* carJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carJson.json; sourceTree = "<group>"; };
+		7C18DC3F27BD05F1002EDDD7 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		7C18DC4127BD0F46002EDDD7 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		7C18DC4227BD0F46002EDDD7 /* CarListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarListViewController.xib; sourceTree = "<group>"; };
+		7C18DC4527BD0F5A002EDDD7 /* CarListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListCoordinator.swift; sourceTree = "<group>"; };
+		7C23EA4B27BD154B00606C8D /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		7C23EA4C27BD154B00606C8D /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,103 @@
 		7C18DC1727BCFCB7002EDDD7 /* NttdataTask */ = {
 			isa = PBXGroup;
 			children = (
-				7C18DC1827BCFCB7002EDDD7 /* AppDelegate.swift */,
-				7C18DC1A27BCFCB7002EDDD7 /* SceneDelegate.swift */,
-				7C18DC1C27BCFCB7002EDDD7 /* ViewController.swift */,
-				7C18DC1E27BCFCB7002EDDD7 /* Main.storyboard */,
+				7C18DC3E27BD05E5002EDDD7 /* Models */,
+				7C18DC3B27BD01F3002EDDD7 /* StubJson */,
+				7C18DC2F27BCFEBD002EDDD7 /* Modules */,
+				7C18DC2C27BCFDB5002EDDD7 /* CoreApp */,
 				7C18DC2127BCFCBA002EDDD7 /* Assets.xcassets */,
 				7C18DC2327BCFCBA002EDDD7 /* LaunchScreen.storyboard */,
 				7C18DC2627BCFCBA002EDDD7 /* Info.plist */,
 			);
 			path = NttdataTask;
+			sourceTree = "<group>";
+		};
+		7C18DC2C27BCFDB5002EDDD7 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				7C18DC1827BCFCB7002EDDD7 /* AppDelegate.swift */,
+				7C18DC2D27BCFDE2002EDDD7 /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		7C18DC2F27BCFEBD002EDDD7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7C18DC3027BCFECD002EDDD7 /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7C18DC3027BCFECD002EDDD7 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				7C18DC3427BCFEF9002EDDD7 /* NewWork */,
+				7C18DC3327BCFEEC002EDDD7 /* WorkList */,
+				7C18DC3227BCFEE0002EDDD7 /* Contact */,
+				7C18DC3127BCFED4002EDDD7 /* TabBarHome */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		7C18DC3127BCFED4002EDDD7 /* TabBarHome */ = {
+			isa = PBXGroup;
+			children = (
+				7C18DC3527BCFFB7002EDDD7 /* TabBarViewController.swift */,
+				7C18DC3627BCFFB7002EDDD7 /* TabBarViewController.xib */,
+				7C18DC3927BCFFD8002EDDD7 /* TabBarHomeCoordinator.swift */,
+			);
+			path = TabBarHome;
+			sourceTree = "<group>";
+		};
+		7C18DC3227BCFEE0002EDDD7 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				7C23EA4A27BD151000606C8D /* Cell */,
+				7C18DC4127BD0F46002EDDD7 /* CarListViewController.swift */,
+				7C18DC4227BD0F46002EDDD7 /* CarListViewController.xib */,
+				7C18DC4527BD0F5A002EDDD7 /* CarListCoordinator.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		7C18DC3327BCFEEC002EDDD7 /* WorkList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WorkList;
+			sourceTree = "<group>";
+		};
+		7C18DC3427BCFEF9002EDDD7 /* NewWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewWork;
+			sourceTree = "<group>";
+		};
+		7C18DC3B27BD01F3002EDDD7 /* StubJson */ = {
+			isa = PBXGroup;
+			children = (
+				7C18DC3C27BD03E4002EDDD7 /* carJson.json */,
+			);
+			path = StubJson;
+			sourceTree = "<group>";
+		};
+		7C18DC3E27BD05E5002EDDD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C18DC3F27BD05F1002EDDD7 /* CarModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C23EA4A27BD151000606C8D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7C23EA4B27BD154B00606C8D /* CarCell.swift */,
+				7C23EA4C27BD154B00606C8D /* CarCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +229,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C18DC3D27BD03E4002EDDD7 /* carJson.json in Resources */,
 				7C18DC2527BCFCBA002EDDD7 /* LaunchScreen.storyboard in Resources */,
+				7C18DC3827BCFFB7002EDDD7 /* TabBarViewController.xib in Resources */,
 				7C18DC2227BCFCBA002EDDD7 /* Assets.xcassets in Resources */,
-				7C18DC2027BCFCB7002EDDD7 /* Main.storyboard in Resources */,
+				7C23EA4E27BD154B00606C8D /* CarCell.xib in Resources */,
+				7C18DC4427BD0F46002EDDD7 /* CarListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +245,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C18DC1D27BCFCB7002EDDD7 /* ViewController.swift in Sources */,
+				7C18DC2E27BCFDE2002EDDD7 /* AppCoordinator.swift in Sources */,
+				7C18DC4327BD0F46002EDDD7 /* CarListViewController.swift in Sources */,
+				7C18DC4627BD0F5A002EDDD7 /* CarListCoordinator.swift in Sources */,
+				7C18DC4027BD05F1002EDDD7 /* CarModel.swift in Sources */,
+				7C18DC3727BCFFB7002EDDD7 /* TabBarViewController.swift in Sources */,
 				7C18DC1927BCFCB7002EDDD7 /* AppDelegate.swift in Sources */,
-				7C18DC1B27BCFCB7002EDDD7 /* SceneDelegate.swift in Sources */,
+				7C23EA4D27BD154B00606C8D /* CarCell.swift in Sources */,
+				7C18DC3A27BCFFD8002EDDD7 /* TabBarHomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7C18DC1E27BCFCB7002EDDD7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C18DC1F27BCFCB7002EDDD7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C18DC2327BCFCBA002EDDD7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +398,6 @@
 				INFOPLIST_FILE = NttdataTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +425,6 @@
 				INFOPLIST_FILE = NttdataTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
