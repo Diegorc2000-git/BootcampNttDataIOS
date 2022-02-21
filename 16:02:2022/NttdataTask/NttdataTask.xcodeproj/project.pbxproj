@@ -27,6 +27,17 @@
 		7C23EA5827BD312600606C8D /* CarListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5727BD312600606C8D /* CarListPresenter.swift */; };
 		7C23EA5B27BD33EE00606C8D /* CarListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5A27BD33EE00606C8D /* CarListRouter.swift */; };
 		7C23EA5D27BD38C600606C8D /* DetailCarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5C27BD38C600606C8D /* DetailCarPresenter.swift */; };
+		7C23EA6127BE5BD200606C8D /* CarDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA5F27BE5BD200606C8D /* CarDetailCell.swift */; };
+		7C23EA6227BE5BD200606C8D /* CarDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C23EA6027BE5BD200606C8D /* CarDetailCell.xib */; };
+		7C23EA6427C3B1F800606C8D /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA6327C3B1F800606C8D /* TaskModel.swift */; };
+		7C23EA6727C3ECE600606C8D /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA6527C3ECE600606C8D /* NewTaskViewController.swift */; };
+		7C23EA6827C3ECE600606C8D /* NewTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C23EA6627C3ECE600606C8D /* NewTaskViewController.xib */; };
+		7C23EA6A27C3ECFC00606C8D /* NewTaksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA6927C3ECFC00606C8D /* NewTaksCoordinator.swift */; };
+		7C23EA6D27C3FD5300606C8D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA6C27C3FD5300606C8D /* Utils.swift */; };
+		7C23EA7027C40DD200606C8D /* ListTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA6E27C40DD200606C8D /* ListTaskViewController.swift */; };
+		7C23EA7127C40DD200606C8D /* ListTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C23EA6F27C40DD200606C8D /* ListTaskViewController.xib */; };
+		7C23EA7427C40FD800606C8D /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23EA7227C40FD800606C8D /* TaskListCell.swift */; };
+		7C23EA7527C40FD800606C8D /* TaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C23EA7327C40FD800606C8D /* TaskListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +63,17 @@
 		7C23EA5727BD312600606C8D /* CarListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListPresenter.swift; sourceTree = "<group>"; };
 		7C23EA5A27BD33EE00606C8D /* CarListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListRouter.swift; sourceTree = "<group>"; };
 		7C23EA5C27BD38C600606C8D /* DetailCarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarPresenter.swift; sourceTree = "<group>"; };
+		7C23EA5F27BE5BD200606C8D /* CarDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailCell.swift; sourceTree = "<group>"; };
+		7C23EA6027BE5BD200606C8D /* CarDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailCell.xib; sourceTree = "<group>"; };
+		7C23EA6327C3B1F800606C8D /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		7C23EA6527C3ECE600606C8D /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		7C23EA6627C3ECE600606C8D /* NewTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTaskViewController.xib; sourceTree = "<group>"; };
+		7C23EA6927C3ECFC00606C8D /* NewTaksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaksCoordinator.swift; sourceTree = "<group>"; };
+		7C23EA6C27C3FD5300606C8D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7C23EA6E27C40DD200606C8D /* ListTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTaskViewController.swift; sourceTree = "<group>"; };
+		7C23EA6F27C40DD200606C8D /* ListTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTaskViewController.xib; sourceTree = "<group>"; };
+		7C23EA7227C40FD800606C8D /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		7C23EA7327C40FD800606C8D /* TaskListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +106,7 @@
 		7C18DC1727BCFCB7002EDDD7 /* NttdataTask */ = {
 			isa = PBXGroup;
 			children = (
+				7C23EA6B27C3FD3A00606C8D /* Utils+Helpers */,
 				7C18DC3E27BD05E5002EDDD7 /* Models */,
 				7C18DC3B27BD01F3002EDDD7 /* StubJson */,
 				7C18DC2F27BCFEBD002EDDD7 /* Modules */,
@@ -117,7 +140,7 @@
 			children = (
 				7C18DC3427BCFEF9002EDDD7 /* NewWork */,
 				7C18DC3327BCFEEC002EDDD7 /* WorkList */,
-				7C18DC3227BCFEE0002EDDD7 /* Contact */,
+				7C18DC3227BCFEE0002EDDD7 /* Car */,
 				7C18DC3127BCFED4002EDDD7 /* TabBarHome */,
 			);
 			path = Sections;
@@ -133,7 +156,7 @@
 			path = TabBarHome;
 			sourceTree = "<group>";
 		};
-		7C18DC3227BCFEE0002EDDD7 /* Contact */ = {
+		7C18DC3227BCFEE0002EDDD7 /* Car */ = {
 			isa = PBXGroup;
 			children = (
 				7C23EA4A27BD151000606C8D /* Cell */,
@@ -144,12 +167,16 @@
 				7C18DC4527BD0F5A002EDDD7 /* CarListCoordinator.swift */,
 				7C23EA5627BD30BD00606C8D /* CarDetail */,
 			);
-			path = Contact;
+			path = Car;
 			sourceTree = "<group>";
 		};
 		7C18DC3327BCFEEC002EDDD7 /* WorkList */ = {
 			isa = PBXGroup;
 			children = (
+				7C23EA6E27C40DD200606C8D /* ListTaskViewController.swift */,
+				7C23EA6F27C40DD200606C8D /* ListTaskViewController.xib */,
+				7C23EA7227C40FD800606C8D /* TaskListCell.swift */,
+				7C23EA7327C40FD800606C8D /* TaskListCell.xib */,
 			);
 			path = WorkList;
 			sourceTree = "<group>";
@@ -157,6 +184,9 @@
 		7C18DC3427BCFEF9002EDDD7 /* NewWork */ = {
 			isa = PBXGroup;
 			children = (
+				7C23EA6527C3ECE600606C8D /* NewTaskViewController.swift */,
+				7C23EA6627C3ECE600606C8D /* NewTaskViewController.xib */,
+				7C23EA6927C3ECFC00606C8D /* NewTaksCoordinator.swift */,
 			);
 			path = NewWork;
 			sourceTree = "<group>";
@@ -173,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				7C18DC3F27BD05F1002EDDD7 /* CarModel.swift */,
+				7C23EA6327C3B1F800606C8D /* TaskModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,12 +220,30 @@
 		7C23EA5627BD30BD00606C8D /* CarDetail */ = {
 			isa = PBXGroup;
 			children = (
+				7C23EA5E27BE5BB200606C8D /* Cell */,
 				7C23EA5427BD2F6C00606C8D /* CarDetailCoordinator.swift */,
-				7C23EA4F27BD2F4300606C8D /* DetailCarViewController.swift */,
 				7C23EA5C27BD38C600606C8D /* DetailCarPresenter.swift */,
+				7C23EA4F27BD2F4300606C8D /* DetailCarViewController.swift */,
 				7C23EA5027BD2F4300606C8D /* DetailCarViewController.xib */,
 			);
 			path = CarDetail;
+			sourceTree = "<group>";
+		};
+		7C23EA5E27BE5BB200606C8D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7C23EA5F27BE5BD200606C8D /* CarDetailCell.swift */,
+				7C23EA6027BE5BD200606C8D /* CarDetailCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7C23EA6B27C3FD3A00606C8D /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7C23EA6C27C3FD5300606C8D /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,12 +305,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C18DC3D27BD03E4002EDDD7 /* carJson.json in Resources */,
+				7C23EA7127C40DD200606C8D /* ListTaskViewController.xib in Resources */,
 				7C18DC2527BCFCBA002EDDD7 /* LaunchScreen.storyboard in Resources */,
 				7C18DC3827BCFFB7002EDDD7 /* TabBarViewController.xib in Resources */,
+				7C23EA7527C40FD800606C8D /* TaskListCell.xib in Resources */,
+				7C23EA6227BE5BD200606C8D /* CarDetailCell.xib in Resources */,
 				7C18DC2227BCFCBA002EDDD7 /* Assets.xcassets in Resources */,
 				7C23EA4E27BD154B00606C8D /* CarCell.xib in Resources */,
 				7C18DC4427BD0F46002EDDD7 /* CarListViewController.xib in Resources */,
 				7C23EA5227BD2F4300606C8D /* DetailCarViewController.xib in Resources */,
+				7C23EA6827C3ECE600606C8D /* NewTaskViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +327,9 @@
 			files = (
 				7C18DC2E27BCFDE2002EDDD7 /* AppCoordinator.swift in Sources */,
 				7C18DC4327BD0F46002EDDD7 /* CarListViewController.swift in Sources */,
+				7C23EA6A27C3ECFC00606C8D /* NewTaksCoordinator.swift in Sources */,
+				7C23EA7027C40DD200606C8D /* ListTaskViewController.swift in Sources */,
+				7C23EA6727C3ECE600606C8D /* NewTaskViewController.swift in Sources */,
 				7C18DC4627BD0F5A002EDDD7 /* CarListCoordinator.swift in Sources */,
 				7C18DC4027BD05F1002EDDD7 /* CarModel.swift in Sources */,
 				7C18DC3727BCFFB7002EDDD7 /* TabBarViewController.swift in Sources */,
@@ -281,10 +337,14 @@
 				7C23EA5827BD312600606C8D /* CarListPresenter.swift in Sources */,
 				7C18DC1927BCFCB7002EDDD7 /* AppDelegate.swift in Sources */,
 				7C23EA4D27BD154B00606C8D /* CarCell.swift in Sources */,
+				7C23EA6D27C3FD5300606C8D /* Utils.swift in Sources */,
 				7C23EA5127BD2F4300606C8D /* DetailCarViewController.swift in Sources */,
 				7C23EA5B27BD33EE00606C8D /* CarListRouter.swift in Sources */,
 				7C23EA5527BD2F6C00606C8D /* CarDetailCoordinator.swift in Sources */,
+				7C23EA7427C40FD800606C8D /* TaskListCell.swift in Sources */,
+				7C23EA6427C3B1F800606C8D /* TaskModel.swift in Sources */,
 				7C18DC3A27BCFFD8002EDDD7 /* TabBarHomeCoordinator.swift in Sources */,
+				7C23EA6127BE5BD200606C8D /* CarDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

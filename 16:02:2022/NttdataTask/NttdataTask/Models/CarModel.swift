@@ -19,23 +19,23 @@ struct CarsModel: Codable {
 // MARK: - ArrayCar
 struct ArrayCar: Codable {
 	let name: String?
-	let milesPerGallon: Int?
-	let cylinders: Int?
-	let displacement: Int?
-	let horsepower: Int?
-	let weightInLbs: Int?
-	let acceleration: Double?
+	let milesPerGallon: String?
+	let cylinders: String?
+	let displacement: String?
+	let horsepower: String?
+	let weightInLbs: String?
+	let acceleration: String?
 	let year: String?
 	let image: String?
 	let origin: String?
 
 	enum CodingKeys: String, CodingKey {
 		case name = "Name"
-		case milesPerGallon = "Miles_per_Gallon"
+		case milesPerGallon = "MilesPerGallon"
 		case cylinders = "Cylinders"
 		case displacement = "Displacement"
 		case horsepower = "Horsepower"
-		case weightInLbs = "Weight_in_lbs"
+		case weightInLbs = "WeightInLbs"
 		case acceleration = "Acceleration"
 		case year = "Year"
 		case image = "Image"
@@ -67,19 +67,4 @@ extension Bundle {
 		let decodeModel = try? jsonDecode.decode(D.self, from: data!)
 		return decodeModel
 	}
-}
-
-class Utils {
-	static let jsonDecoder: JSONDecoder = {
-		let jsonDecoder = JSONDecoder()
-		jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-		jsonDecoder.dateDecodingStrategy = .formatted(dateFormatter)
-		return jsonDecoder
-	}()
-	
-	static let dateFormatter: DateFormatter = {
-		let dateFormatter = DateFormatter()
-		dateFormatter.dateFormat = "yyyy-mm-dd"
-		return dateFormatter
-	}()
 }

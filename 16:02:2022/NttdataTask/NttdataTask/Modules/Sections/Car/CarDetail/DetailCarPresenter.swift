@@ -8,7 +8,8 @@
 import Foundation
 
 protocol DetailCarPresenterProtocol {
-	
+	func getDataModel()
+	func informationData() -> ArrayCar?
 }
 
 final class DetailCarPresenter {
@@ -23,5 +24,13 @@ final class DetailCarPresenter {
 }
 
 extension DetailCarPresenter: DetailCarPresenterProtocol {
+	
+	func getDataModel() {
+		self.vc?.reloadDataModel()
+	}
+	
+	func informationData() -> ArrayCar? {
+		return modelData
+	}
 	
 }
