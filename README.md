@@ -60,8 +60,13 @@
 
 - Creacion de tabla de coches con un json
 - imagen redondeada y iconos en la navigation Bar
+- BBDD
+- creación de un anuncio
+- mostrar el anuncio
 
 ![Captura de pantalla 2022-02-16 a las 12 39 39](https://user-images.githubusercontent.com/85167928/154257566-fcf48626-bc82-45dd-9d7d-24af0bf8dc93.png)
+![Captura de pantalla 2022-02-21 a las 19 35 25](https://user-images.githubusercontent.com/85167928/155011044-d16b8435-b30c-4063-8500-9d4e4b46fb87.png)
+![Captura de pantalla 2022-02-21 a las 19 35 32](https://user-images.githubusercontent.com/85167928/155011050-ae4bbbb9-8173-4211-99d2-66fd420ce8d6.png)
 
 # NTTDataApp
 
