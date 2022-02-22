@@ -7,8 +7,15 @@
 
 import UIKit
 
+protocol NewTaskViewProtocol {
+	
+}
+
 class NewTaskViewController: UIViewController {
 
+	// MARK: - ID
+	var presenter: NewTaskPresenterProtocol?
+	
 	// MARK: - Variables Locales Globales
 	var arrayPrioridad = ["Alta", "Media - Alta", "Media", "Baja", "Sin Prioridad"]
 	let Text_Field_LIMIT = 140
@@ -37,28 +44,15 @@ class NewTaskViewController: UIViewController {
 	@IBOutlet weak var newTaskSaveTaskButton: UIButton!
 
 	@IBAction func saveTask(_ sender: Any) {
-		if !(newTaskTitleTF.text?.isEmpty ?? false) && !(newTaskDescriptionTF.text?.isEmpty ?? false) {
-			
-			if let imageData: Data = self.newTaskImage.image?.jpegData(compressionQuality: 0.5) {
-				
-				SaveFavoritesPresenter.shared.addLocal(favorite: DownloadNewModel(pId: Int.random(in: 0..<999),
-																				  pNewTask: self.newTaskTitleTF.text ?? "",
-																				  pPriority: self.newTaskPriorityTF.text ?? "",
-																				  pTaskDate: self.newTaskDateTF.text ?? "",
-																				  pTaskDescription: self.newTaskDescriptionTF.text ?? "",
-																				  pTaskCategory: self.newTaskCategoryTitle.text ?? "",
-																				  pTaskImage: imageData)) { (success) in
-					print("Alert 1")
-				} failure: { (error) in
-					print("Alert 2")
-				}
-				
-			}
-		} else {
-			print("Alerta 3")
-		}
-		
+		self.presenter?.saveTaskPressed()
 	}
+	
+	@IBAction func showCategoryList(_ sender: Any) {
+		let vc = CategoryTableViewController()
+		vc.delegate = self
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 		
@@ -100,36 +94,21 @@ class NewTaskViewController: UIViewController {
 	}
 	// Menu camara/galeria
 	func showPhotoMenu() {
-		let actionSheet = UIAlertController(title: "Selecciona una Opcion", message: nil, preferredStyle: .actionSheet)
-		actionSheet.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
-		actionSheet.addAction(UIAlertAction(title: "Sacar Foto", style: .default, handler: { _ in
-			self.takePhotoWithCamera()
-		}))
-		actionSheet.addAction(UIAlertAction(title: "Escoger de la libreria de foto", style: .default, handler: { _ in
-			self.choosePhotoFromLibrary()
-		}))
-		present(actionSheet, animated: true, completion: nil)
+		self.presenter?.menuGallery()
 	}
 	// Acceder a la camara
 	func takePhotoWithCamera() {
-		let imagePicker = UIImagePickerController()
-		imagePicker.sourceType = .camera
-		imagePicker.delegate = self
-		imagePicker.allowsEditing = true
-		present(imagePicker, animated: true, completion: nil)
+		self.presenter?.camera()
 	}
 	// Acceder a la galeria
 	func choosePhotoFromLibrary() {
-		let imagePicker = UIImagePickerController()
-		imagePicker.sourceType = .photoLibrary
-		imagePicker.delegate = self
-		imagePicker.allowsEditing = true
-		present(imagePicker, animated: true, completion: nil)
+		self.presenter?.library()
 	}
 	
 }
 
 extension NewTaskViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+	
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 		if let pickerImage = info[.originalImage] as? UIImage {
 			self.newTaskImage.contentMode = .scaleAspectFill
@@ -162,5 +141,16 @@ extension NewTaskViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 		newTaskPriorityTF.text = arrayPrioridad[row]
 	}
+	
+}
+
+extension NewTaskViewController: CategoryTableViewControllerDelegate {
+	
+	func nameCategorySelected(_ categoryClass: CategoryTableViewController, category row: String) {
+		self.newTaskCategoryTitle.text = row
+	}
+	
+}
+extension NewTaskViewController: NewTaskViewProtocol {
 	
 }

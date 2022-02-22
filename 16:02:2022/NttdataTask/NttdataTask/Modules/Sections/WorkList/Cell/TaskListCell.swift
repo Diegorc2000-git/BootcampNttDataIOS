@@ -7,18 +7,31 @@
 
 import UIKit
 
+protocol TaskListProtocol {
+	
+}
+
 class TaskListCell: UITableViewCell {
 
-	@IBOutlet weak var lblmyName: UILabel!
+	
+	@IBOutlet weak var titleTask: UILabel!
+	@IBOutlet weak var priorityTask: UILabel!
+	@IBOutlet weak var dateTask: UILabel!
+	@IBOutlet weak var categoryTask: UILabel!
+	@IBOutlet weak var imageTask: UIImageView!
+	@IBOutlet weak var descriptionTask: UILabel!
+	
 	override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
+}
+
+extension TaskListCell: TaskListProtocol {
+	
 }

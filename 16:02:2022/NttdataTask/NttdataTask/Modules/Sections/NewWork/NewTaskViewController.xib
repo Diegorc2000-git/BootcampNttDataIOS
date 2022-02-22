@@ -120,35 +120,38 @@
                                 <constraint firstAttribute="width" constant="100" id="LWc-8b-pTt"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce una Prioridad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQq-Ap-9t8">
-                            <rect key="frame" x="24" y="255" width="178" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce una Decripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQq-Ap-9t8">
+                            <rect key="frame" x="24" y="255" width="191.5" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BIY-va-my0">
-                            <rect key="frame" x="24" y="278" width="320" height="120"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BIY-va-my0">
+                            <rect key="frame" x="24" y="278" width="320" height="132"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="120" id="2iw-Ex-LRK"/>
+                                <constraint firstAttribute="height" constant="132" id="4Z5-6V-JtJ"/>
                                 <constraint firstAttribute="width" constant="320" id="xj9-ab-gai"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR9-oE-sAV">
-                            <rect key="frame" x="315" y="402" width="29" height="21"/>
+                            <rect key="frame" x="315" y="414" width="29" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7se-2Z-TnM">
                             <rect key="frame" x="24" y="653" width="160" height="41"/>
-                            <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <color key="backgroundColor" red="0.78039215689999997" green="0.50283018580000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Categoria">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="showCategoryList:" destination="-1" eventType="touchUpInside" id="eMK-Db-Tll"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fa-KT-Fjk">
                             <rect key="frame" x="204" y="665" width="162" height="21"/>
@@ -158,7 +161,7 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBO-I4-2H7">
                             <rect key="frame" x="128" y="718" width="158" height="48"/>
-                            <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <color key="backgroundColor" red="0.78039215689999997" green="0.50283018580000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="a4U-LI-2CJ"/>
                             </constraints>
@@ -176,7 +179,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" red="0.89000000000000001" green="0.64189034590000005" blue="0.40922826309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="YBO-I4-2H7" firstAttribute="top" secondItem="5Fa-KT-Fjk" secondAttribute="bottom" constant="32" id="00U-21-fpY"/>
                         <constraint firstAttribute="bottom" secondItem="YBO-I4-2H7" secondAttribute="bottom" constant="52" id="2Dv-7m-k9E"/>
@@ -212,6 +215,7 @@
                         <constraint firstItem="zo2-Bh-tLw" firstAttribute="top" secondItem="qd1-Gd-6hx" secondAttribute="bottom" constant="4" id="pZS-Fm-TyM"/>
                         <constraint firstItem="dJ1-vp-FIJ" firstAttribute="top" secondItem="zo2-Bh-tLw" secondAttribute="bottom" constant="2" id="pxq-hW-ORu"/>
                         <constraint firstItem="Bhv-Z3-jO1" firstAttribute="top" secondItem="jLd-O3-MWD" secondAttribute="bottom" constant="8" symbolic="YES" id="uRl-Wb-4HW"/>
+                        <constraint firstAttribute="trailing" secondItem="BIY-va-my0" secondAttribute="trailing" constant="70" id="vsV-sn-JIf"/>
                         <constraint firstAttribute="trailing" secondItem="jLd-O3-MWD" secondAttribute="trailing" constant="24" id="wh4-z0-E7i"/>
                         <constraint firstItem="jLd-O3-MWD" firstAttribute="top" secondItem="L0u-Fi-jjg" secondAttribute="top" constant="56" id="wrn-Se-WPP"/>
                         <constraint firstItem="5Fa-KT-Fjk" firstAttribute="leading" secondItem="7se-2Z-TnM" secondAttribute="trailing" constant="20" id="yDi-MO-caL"/>
@@ -235,9 +239,6 @@
         <image name="placeholder" width="1920" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

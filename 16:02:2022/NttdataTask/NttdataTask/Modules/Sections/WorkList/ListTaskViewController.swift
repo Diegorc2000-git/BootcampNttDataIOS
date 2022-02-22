@@ -7,8 +7,15 @@
 
 import UIKit
 
+protocol ListTaskViewProtocol {
+	func reloadDataInView()
+}
+
 class ListTaskViewController: UIViewController {
 
+	// MARK: - ID
+	var presenter: ListTaskPresenterProtocol?
+	
 	var downloads: [DownloadNewModel]?
 	
 	@IBOutlet weak var myTaskListTableView: UITableView!
@@ -50,8 +57,27 @@ extension ListTaskViewController: UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cellDownload = self.myTaskListTableView.dequeueReusableCell(withIdentifier: "TaskListCell", for: indexPath) as! TaskListCell
-		cellDownload.lblmyName.text = self.downloads?[indexPath.row].newTask
+		cellDownload.titleTask.text = self.downloads?[indexPath.row].newTask
+		cellDownload.priorityTask.text = self.downloads?[indexPath.row].priority
+		cellDownload.dateTask.text = self.downloads?[indexPath.row].taskDate
+		cellDownload.categoryTask.text = self.downloads?[indexPath.row].taskCategory
+		//imageTask
+		cellDownload.descriptionTask.text = self.downloads?[indexPath.row].taskDescription
+		//cellDownload.imageTask.image = UIImage(named: downloads.taskImage )
+
 		return cellDownload
+	
 	}
 	
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		300
+	}
+	
+}
+
+extension ListTaskViewController: ListTaskViewProtocol {
+	
+	func reloadDataInView() {
+		self.myTaskListTableView.reloadData()
+	}
 }

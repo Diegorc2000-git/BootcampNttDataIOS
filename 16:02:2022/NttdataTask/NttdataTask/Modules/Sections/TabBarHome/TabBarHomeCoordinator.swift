@@ -28,7 +28,7 @@ final class TabBarHomeCoordinator {
 		newTaskVC.tabBarItem = customButton2
 		
 		//3
-		let taskListVC = ListTaskViewController()
+		let taskListVC = ListTaskCoordinator.navigation()
 		let customButton3 = UITabBarItem(title: "TasK",
 										 image: UIImage(named: "one")?.withRenderingMode(.alwaysOriginal),
 										 selectedImage: UIImage(named: "one")?.withRenderingMode(.alwaysOriginal))
