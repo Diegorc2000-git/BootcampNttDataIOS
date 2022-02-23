@@ -13,6 +13,7 @@ protocol NewTaskPresenterProtocol {
 	func library()
 	func camera()
 	func menuGallery()
+	func resetPressed()
 }
 
 final class NewTaskPresenter {
@@ -28,6 +29,10 @@ final class NewTaskPresenter {
 
 extension NewTaskPresenter: NewTaskPresenterProtocol {
 	
+	func resetPressed() {
+	
+	}
+	
 	func saveTaskPressed() {
 		if !(vc?.newTaskTitleTF.text?.isEmpty ?? false) && !(vc?.newTaskDescriptionTF.text?.isEmpty ?? false) {
 			
@@ -39,7 +44,8 @@ extension NewTaskPresenter: NewTaskPresenterProtocol {
 																				  pTaskDate: vc?.newTaskDateTF.text ?? "",
 																				  pTaskDescription: vc?.newTaskDescriptionTF.text ?? "",
 																				  pTaskCategory:vc?.newTaskCategoryTitle.text ?? "",
-																				  pTaskImage: imageData)) { (success) in
+																				  pTaskImage: imageData))
+				{ (success) in
 					print("Datos Guardados Correctamente")
 				} failure: { (error) in
 					print("Error Al Guardar Los Datos")

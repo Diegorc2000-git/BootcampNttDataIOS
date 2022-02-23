@@ -105,6 +105,18 @@ class NewTaskViewController: UIViewController {
 		self.presenter?.library()
 	}
 	
+	private func textLimit(existingText: String?, newText: String, limit: Int) -> Bool {
+		let text = existingText ?? ""
+		let isAtLimit = text.count + newText.count <= limit
+		return isAtLimit
+	}
+	
+}
+
+extension NewTaskViewController: UITextFieldDelegate {
+	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+		return self.textLimit(existingText: newTaskDescriptionTF.text, newText: string, limit: Text_Field_LIMIT)
+	}
 }
 
 extension NewTaskViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -123,7 +135,6 @@ extension NewTaskViewController: UIImagePickerControllerDelegate, UINavigationCo
 		dismiss(animated: true, completion: nil)
 	}
 }
-
 extension NewTaskViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 	
 	func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -143,7 +154,6 @@ extension NewTaskViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 	}
 	
 }
-
 extension NewTaskViewController: CategoryTableViewControllerDelegate {
 	
 	func nameCategorySelected(_ categoryClass: CategoryTableViewController, category row: String) {
