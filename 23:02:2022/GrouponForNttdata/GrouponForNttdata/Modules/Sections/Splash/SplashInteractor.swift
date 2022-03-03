@@ -11,10 +11,18 @@ protocol SplashInteractorProtocol {
 	func fetchData()
 }
 
-class SplashInteractor: BaseInteractor<SplashPresenterProtocol> {
+class SplashInteractor: BaseInteractor<SplashInteractorOutputProtocol> {
 	
 	let provider: SplashProviderProtocol = SplashProvider()
 	
+	private func transformaData(data: [Card]) -> [CardBusinessModel] {
+		var arrayData: [CardBusinessModel] = []
+		for index in 0..<data.count {
+			let obj = CardBusinessModel(data: CardDataViewModel(isAutoRefundEnabled: data[index].data?.isAutoRefundEnabled ?? false))
+			arrayData.append(obj)
+		}
+		return arrayData
+	}
 }
 
 extension SplashInteractor: SplashInteractorProtocol {
@@ -22,9 +30,9 @@ extension SplashInteractor: SplashInteractorProtocol {
 	func fetchData() {
 		provider.fetchData { [weak self] (result) in
 			guard self != nil else { return }
-			self?.presenter.getDataFromBusiness(data: result.cards)
+			self?.presenter?.getDataFromBusiness(data: self?.transformaData(data: result.cards ?? []))
 		} failure: { (error) in
-			
+			//
 		}
 
 	}

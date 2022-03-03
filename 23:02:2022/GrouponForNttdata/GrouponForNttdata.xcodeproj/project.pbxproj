@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CACE08127D0CE9D005B6479 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE07F27D0CE9D005B6479 /* GenericCell.swift */; };
+		7CACE08227D0CE9D005B6479 /* GenericCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CACE08027D0CE9D005B6479 /* GenericCell.xib */; };
 		7CCDE67E27C654B3006523F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE67D27C654B3006523F6 /* AppDelegate.swift */; };
 		7CCDE68727C654B5006523F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCDE68627C654B5006523F6 /* Assets.xcassets */; };
 		7CCDE68A27C654B5006523F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCDE68827C654B5006523F6 /* LaunchScreen.storyboard */; };
@@ -22,14 +24,16 @@
 		7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */; };
 		7CCDE6B627C66E07006523F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B527C66E07006523F6 /* NetworkService.swift */; };
 		7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B727C77213006523F6 /* NetworkError.swift */; };
-		7CCDE6BA27C7E57A006523F6 /* EverGrouponServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B927C7E57A006523F6 /* EverGrouponServerModel.swift */; };
+		7CCDE6BA27C7E57A006523F6 /* NttDataGrouponServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */; };
 		7CCDE6BC27C7E5DA006523F6 /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */; };
-		7CCDE6BE27C7E710006523F6 /* EverGrouponBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BD27C7E710006523F6 /* EverGrouponBusinessModel.swift */; };
+		7CCDE6BE27C7E710006523F6 /* NttDataGrouponBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */; };
 		A73A3315FFE2ED0FE62DAA5C /* Pods_GrouponForNttdata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrouponForNttdata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CACE07F27D0CE9D005B6479 /* GenericCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
+		7CACE08027D0CE9D005B6479 /* GenericCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericCell.xib; sourceTree = "<group>"; };
 		7CCDE67A27C654B3006523F6 /* GrouponForNttdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouponForNttdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCDE67D27C654B3006523F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCDE68627C654B5006523F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,9 +51,9 @@
 		7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7CCDE6B527C66E07006523F6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7CCDE6B727C77213006523F6 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		7CCDE6B927C7E57A006523F6 /* EverGrouponServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverGrouponServerModel.swift; sourceTree = "<group>"; };
+		7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NttDataGrouponServerModel.swift; sourceTree = "<group>"; };
 		7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
-		7CCDE6BD27C7E710006523F6 /* EverGrouponBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverGrouponBusinessModel.swift; sourceTree = "<group>"; };
+		7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NttDataGrouponBusinessModel.swift; sourceTree = "<group>"; };
 		8EDAFA30CB9B31E0E0B73CD0 /* Pods-GrouponForNttdata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.release.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.release.xcconfig"; sourceTree = "<group>"; };
 		931317391E311E848C4C5FF5 /* Pods-GrouponForNttdata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.debug.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CACE07E27D0CE78005B6479 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7CACE07F27D0CE9D005B6479 /* GenericCell.swift */,
+				7CACE08027D0CE9D005B6479 /* GenericCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7CCDE67127C654B2006523F6 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +139,7 @@
 		7CCDE69627C65CB7006523F6 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				7CACE07E27D0CE78005B6479 /* Cell */,
 				7CCDE6A727C65D1A006523F6 /* Models */,
 				7CCDE6A427C65D05006523F6 /* Coordinator */,
 				7CCDE69827C65CD2006523F6 /* SplashViewController.swift */,
@@ -149,8 +163,8 @@
 		7CCDE6A727C65D1A006523F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7CCDE6B927C7E57A006523F6 /* EverGrouponServerModel.swift */,
-				7CCDE6BD27C7E710006523F6 /* EverGrouponBusinessModel.swift */,
+				7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */,
+				7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */,
 				7CCDE6AC27C65D45006523F6 /* ViewModel.swift */,
 			);
 			path = Models;
@@ -260,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCDE68A27C654B5006523F6 /* LaunchScreen.storyboard in Resources */,
+				7CACE08227D0CE9D005B6479 /* GenericCell.xib in Resources */,
 				7CCDE69B27C65CD2006523F6 /* SplashViewController.xib in Resources */,
 				7CCDE68727C654B5006523F6 /* Assets.xcassets in Resources */,
 			);
@@ -316,13 +331,14 @@
 			files = (
 				7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */,
 				7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */,
-				7CCDE6BE27C7E710006523F6 /* EverGrouponBusinessModel.swift in Sources */,
+				7CCDE6BE27C7E710006523F6 /* NttDataGrouponBusinessModel.swift in Sources */,
 				7CCDE6AD27C65D45006523F6 /* ViewModel.swift in Sources */,
 				7CCDE69A27C65CD2006523F6 /* SplashViewController.swift in Sources */,
 				7CCDE6A327C65D02006523F6 /* SplashRouter.swift in Sources */,
 				7CCDE67E27C654B3006523F6 /* AppDelegate.swift in Sources */,
-				7CCDE6BA27C7E57A006523F6 /* EverGrouponServerModel.swift in Sources */,
+				7CCDE6BA27C7E57A006523F6 /* NttDataGrouponServerModel.swift in Sources */,
 				7CCDE69F27C65CEB006523F6 /* SplashInteractor.swift in Sources */,
+				7CACE08127D0CE9D005B6479 /* GenericCell.swift in Sources */,
 				7CCDE6B027C65DA8006523F6 /* Utils.swift in Sources */,
 				7CCDE6A627C65D14006523F6 /* SplashCoordinator.swift in Sources */,
 				7CCDE69327C65875006523F6 /* BaseViper.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  EverGrouponBusinessModel.swift
+//  NttDataGrouponBusinessModel.swift
 //  GrouponForNttdata
 //
 //  Created by Diego Rodriguez Casillas on 24/2/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EverGrouponBusinessModel: Decodable {
+struct NttDataGrouponBusinessModel: Decodable {
 	
 	let cards: [CardBusinessModel]?
 	

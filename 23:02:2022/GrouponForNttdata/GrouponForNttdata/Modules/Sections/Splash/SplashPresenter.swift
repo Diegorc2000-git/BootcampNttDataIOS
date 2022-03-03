@@ -8,20 +8,42 @@
 import Foundation
 
 protocol SplashPresenterProtocol {
-	
+	func fetchDataFromPresent()
+	func numberOfRowInSections() -> Int
+	func informationForCell(indexPath: Int) -> CardDataViewModel?
 }
 
 protocol SplashInteractorOutputProtocol {
-	func getDataFromBusiness(data: [Card]?)
+	func getDataFromBusiness(data: [CardBusinessModel]?)
 }
 
 class SplashPresenter: BasePresenter<SplashViewProtocol, SplashRouterProtocol, SplashInteractorProtocol> {
 	
+	var arrayData: [CardBusinessModel] = []
 }
 
 extension SplashPresenter: SplashPresenterProtocol {
-	
-	func getDataFromBusiness(data: [Card]?) {
-		//
+	func numberOfRowInSections() -> Int {
+		arrayData.count
 	}
+	
+	func informationForCell(indexPath: Int) -> CardDataViewModel? {
+		arrayData[indexPath].data
+	}
+	
+	func fetchDataFromPresent() {
+		self.interactor?.fetchData()
+	}
+	
+}
+
+extension SplashPresenter: SplashInteractorOutputProtocol {
+	
+	func getDataFromBusiness(data: [CardBusinessModel]?) {
+		if let dataDes = data {
+			self.arrayData = dataDes
+			self.vc?.reloadInformationInView()
+		}
+	}
+	
 }

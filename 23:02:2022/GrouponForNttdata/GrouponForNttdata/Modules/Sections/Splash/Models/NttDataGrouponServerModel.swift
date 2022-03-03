@@ -1,5 +1,5 @@
 //
-//  EverGrouponServerModel.swift
+//  NttDataGrouponServerModel.swift
 //  GrouponForNttdata
 //
 //  Created by Diego Rodriguez Casillas on 24/2/22.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - EverGrouponServerModel
-struct EverGrouponServerModel: Decodable {
+// MARK: - NttDataGrouponServerModel
+struct NttDataGrouponServerModel: Decodable {
 	let cards: [Card]?
 	let pagination: Pagination?
 	let relevanceService: RelevanceService?
