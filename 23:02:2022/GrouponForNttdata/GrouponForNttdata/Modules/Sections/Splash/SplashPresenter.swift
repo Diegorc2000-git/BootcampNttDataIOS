@@ -11,10 +11,17 @@ protocol SplashPresenterProtocol {
 	
 }
 
+protocol SplashInteractorOutputProtocol {
+	func getDataFromBusiness(data: [Card]?)
+}
+
 class SplashPresenter: BasePresenter<SplashViewProtocol, SplashRouterProtocol, SplashInteractorProtocol> {
 	
 }
 
 extension SplashPresenter: SplashPresenterProtocol {
 	
+	func getDataFromBusiness(data: [Card]?) {
+		//
+	}
 }

@@ -21,6 +21,9 @@ final class AppCoordinator: AppCoordinatorProtocol {
 		window.makeKeyAndVisible()
 	}
 	
+	static let defaultHttpHeader: [String: String] = {
+		return ["Authorization": URLEndpoint.bearedHeroku]
+	}()
 }
 
 

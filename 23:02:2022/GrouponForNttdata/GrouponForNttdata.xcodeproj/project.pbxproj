@@ -17,11 +17,14 @@
 		7CCDE69F27C65CEB006523F6 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE69E27C65CEB006523F6 /* SplashInteractor.swift */; };
 		7CCDE6A327C65D02006523F6 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6A227C65D02006523F6 /* SplashRouter.swift */; };
 		7CCDE6A627C65D14006523F6 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */; };
-		7CCDE6A927C65D2E006523F6 /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6A827C65D2E006523F6 /* ServerModel.swift */; };
-		7CCDE6AB27C65D3C006523F6 /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6AA27C65D3C006523F6 /* BusinessModel.swift */; };
 		7CCDE6AD27C65D45006523F6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6AC27C65D45006523F6 /* ViewModel.swift */; };
 		7CCDE6B027C65DA8006523F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6AF27C65DA8006523F6 /* Utils.swift */; };
 		7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */; };
+		7CCDE6B627C66E07006523F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B527C66E07006523F6 /* NetworkService.swift */; };
+		7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B727C77213006523F6 /* NetworkError.swift */; };
+		7CCDE6BA27C7E57A006523F6 /* EverGrouponServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B927C7E57A006523F6 /* EverGrouponServerModel.swift */; };
+		7CCDE6BC27C7E5DA006523F6 /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */; };
+		7CCDE6BE27C7E710006523F6 /* EverGrouponBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BD27C7E710006523F6 /* EverGrouponBusinessModel.swift */; };
 		A73A3315FFE2ED0FE62DAA5C /* Pods_GrouponForNttdata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +42,14 @@
 		7CCDE69E27C65CEB006523F6 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		7CCDE6A227C65D02006523F6 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		7CCDE6A827C65D2E006523F6 /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
-		7CCDE6AA27C65D3C006523F6 /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 		7CCDE6AC27C65D45006523F6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7CCDE6AF27C65DA8006523F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7CCDE6B527C66E07006523F6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7CCDE6B727C77213006523F6 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7CCDE6B927C7E57A006523F6 /* EverGrouponServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverGrouponServerModel.swift; sourceTree = "<group>"; };
+		7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
+		7CCDE6BD27C7E710006523F6 /* EverGrouponBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverGrouponBusinessModel.swift; sourceTree = "<group>"; };
 		8EDAFA30CB9B31E0E0B73CD0 /* Pods-GrouponForNttdata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.release.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.release.xcconfig"; sourceTree = "<group>"; };
 		931317391E311E848C4C5FF5 /* Pods-GrouponForNttdata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.debug.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +87,7 @@
 		7CCDE67C27C654B3006523F6 /* GrouponForNttdata */ = {
 			isa = PBXGroup;
 			children = (
+				7CCDE6B427C66DF4006523F6 /* NetworkService */,
 				7CCDE6B127C66B4E006523F6 /* CoreApp */,
 				7CCDE6AE27C65D97006523F6 /* Utils+Helpers */,
 				7CCDE69427C65CAA006523F6 /* Modules */,
@@ -134,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */,
+				7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -141,8 +149,8 @@
 		7CCDE6A727C65D1A006523F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7CCDE6A827C65D2E006523F6 /* ServerModel.swift */,
-				7CCDE6AA27C65D3C006523F6 /* BusinessModel.swift */,
+				7CCDE6B927C7E57A006523F6 /* EverGrouponServerModel.swift */,
+				7CCDE6BD27C7E710006523F6 /* EverGrouponBusinessModel.swift */,
 				7CCDE6AC27C65D45006523F6 /* ViewModel.swift */,
 			);
 			path = Models;
@@ -163,6 +171,15 @@
 				7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */,
 			);
 			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		7CCDE6B427C66DF4006523F6 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6B527C66E07006523F6 /* NetworkService.swift */,
+				7CCDE6B727C77213006523F6 /* NetworkError.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		A881EC1B15EFC8CD70BBE796 /* Frameworks */ = {
@@ -298,16 +315,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */,
+				7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */,
+				7CCDE6BE27C7E710006523F6 /* EverGrouponBusinessModel.swift in Sources */,
 				7CCDE6AD27C65D45006523F6 /* ViewModel.swift in Sources */,
 				7CCDE69A27C65CD2006523F6 /* SplashViewController.swift in Sources */,
 				7CCDE6A327C65D02006523F6 /* SplashRouter.swift in Sources */,
 				7CCDE67E27C654B3006523F6 /* AppDelegate.swift in Sources */,
+				7CCDE6BA27C7E57A006523F6 /* EverGrouponServerModel.swift in Sources */,
 				7CCDE69F27C65CEB006523F6 /* SplashInteractor.swift in Sources */,
-				7CCDE6A927C65D2E006523F6 /* ServerModel.swift in Sources */,
-				7CCDE6AB27C65D3C006523F6 /* BusinessModel.swift in Sources */,
 				7CCDE6B027C65DA8006523F6 /* Utils.swift in Sources */,
 				7CCDE6A627C65D14006523F6 /* SplashCoordinator.swift in Sources */,
 				7CCDE69327C65875006523F6 /* BaseViper.swift in Sources */,
+				7CCDE6B627C66E07006523F6 /* NetworkService.swift in Sources */,
+				7CCDE6BC27C7E5DA006523F6 /* SplashProvider.swift in Sources */,
 				7CCDE69D27C65CE0006523F6 /* SplashPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

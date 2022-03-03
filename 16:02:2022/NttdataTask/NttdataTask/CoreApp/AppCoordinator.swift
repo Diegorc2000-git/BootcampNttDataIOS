@@ -21,4 +21,18 @@ final class AppCoordinator: AppCoordinatorProtocol {
 		window.rootViewController = self.initialVC
 		window.makeKeyAndVisible()
 	}
+	
+	private func customUI() {
+		let navigationBar = UINavigationBar.appearance()
+		let tabBar = UITabBar.appearance()
+		
+		navigationBar.backgroundColor = UIColor.black
+		tabBar.backgroundColor = UIColor.black
+		navigationBar.tintColor = UIColor.white
+		tabBar.tintColor = UIColor.white
+		navigationBar.barStyle = .default
+		tabBar.barStyle = .default
+
+		navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+	}
 }
