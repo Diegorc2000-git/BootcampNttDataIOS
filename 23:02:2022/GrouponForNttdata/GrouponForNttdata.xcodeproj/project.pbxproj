@@ -7,8 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0F699527D75F1A00420D1E /* GrouponListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0F699427D75F1A00420D1E /* GrouponListViewController.xib */; };
+		7C0F699927D7634D00420D1E /* GrouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F699727D7634D00420D1E /* GrouponCell.swift */; };
+		7C0F699A27D7634D00420D1E /* GrouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0F699827D7634D00420D1E /* GrouponCell.xib */; };
+		7C0F699C27D76BCD00420D1E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F699B27D76BCD00420D1E /* CardViewModel.swift */; };
+		7C44CF1727D11FA100F3C10B /* GrouponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1227D11FA000F3C10B /* GrouponListViewController.swift */; };
+		7C44CF1827D11FA100F3C10B /* GrouponListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1327D11FA000F3C10B /* GrouponListInteractor.swift */; };
+		7C44CF1927D11FA100F3C10B /* GrouponListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1427D11FA000F3C10B /* GrouponListRouter.swift */; };
+		7C44CF1A27D11FA100F3C10B /* GrouponListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1527D11FA100F3C10B /* GrouponListPresenter.swift */; };
+		7C44CF1D27D120C800F3C10B /* GrouponListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1C27D120C800F3C10B /* GrouponListCoordinator.swift */; };
+		7C44CF1F27D1216400F3C10B /* GrouponListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1E27D1216400F3C10B /* GrouponListProvider.swift */; };
 		7CACE08127D0CE9D005B6479 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE07F27D0CE9D005B6479 /* GenericCell.swift */; };
 		7CACE08227D0CE9D005B6479 /* GenericCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CACE08027D0CE9D005B6479 /* GenericCell.xib */; };
+		7CACE08927D0D713005B6479 /* SplashDosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE08427D0D713005B6479 /* SplashDosPresenter.swift */; };
+		7CACE08A27D0D713005B6479 /* SplashDosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE08527D0D713005B6479 /* SplashDosRouter.swift */; };
+		7CACE08B27D0D713005B6479 /* SplashDosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE08627D0D713005B6479 /* SplashDosInteractor.swift */; };
+		7CACE08C27D0D713005B6479 /* SplashDosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CACE08727D0D713005B6479 /* SplashDosViewController.xib */; };
+		7CACE08D27D0D713005B6479 /* SplashDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE08827D0D713005B6479 /* SplashDosViewController.swift */; };
+		7CACE09027D0D7C4005B6479 /* SplashDosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE08F27D0D7C4005B6479 /* SplashDosCoordinator.swift */; };
+		7CACE09727D10354005B6479 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE09527D10354005B6479 /* HomeTabBarViewController.swift */; };
+		7CACE09827D10354005B6479 /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CACE09627D10354005B6479 /* HomeTabBarViewController.xib */; };
+		7CACE09A27D103D5005B6479 /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACE09927D103D5005B6479 /* HomeTabBarCoordinator.swift */; };
 		7CCDE67E27C654B3006523F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE67D27C654B3006523F6 /* AppDelegate.swift */; };
 		7CCDE68727C654B5006523F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCDE68627C654B5006523F6 /* Assets.xcassets */; };
 		7CCDE68A27C654B5006523F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCDE68827C654B5006523F6 /* LaunchScreen.storyboard */; };
@@ -19,21 +38,38 @@
 		7CCDE69F27C65CEB006523F6 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE69E27C65CEB006523F6 /* SplashInteractor.swift */; };
 		7CCDE6A327C65D02006523F6 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6A227C65D02006523F6 /* SplashRouter.swift */; };
 		7CCDE6A627C65D14006523F6 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */; };
-		7CCDE6AD27C65D45006523F6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6AC27C65D45006523F6 /* ViewModel.swift */; };
 		7CCDE6B027C65DA8006523F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6AF27C65DA8006523F6 /* Utils.swift */; };
 		7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */; };
 		7CCDE6B627C66E07006523F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B527C66E07006523F6 /* NetworkService.swift */; };
 		7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B727C77213006523F6 /* NetworkError.swift */; };
 		7CCDE6BA27C7E57A006523F6 /* NttDataGrouponServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */; };
 		7CCDE6BC27C7E5DA006523F6 /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */; };
-		7CCDE6BE27C7E710006523F6 /* NttDataGrouponBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */; };
 		A73A3315FFE2ED0FE62DAA5C /* Pods_GrouponForNttdata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51C29626ED98E635E3090774 /* Pods_GrouponForNttdata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrouponForNttdata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0F699427D75F1A00420D1E /* GrouponListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrouponListViewController.xib; sourceTree = "<group>"; };
+		7C0F699727D7634D00420D1E /* GrouponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrouponCell.swift; sourceTree = "<group>"; };
+		7C0F699827D7634D00420D1E /* GrouponCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrouponCell.xib; sourceTree = "<group>"; };
+		7C0F699B27D76BCD00420D1E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		7C44CF1227D11FA000F3C10B /* GrouponListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListViewController.swift; sourceTree = "<group>"; };
+		7C44CF1327D11FA000F3C10B /* GrouponListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListInteractor.swift; sourceTree = "<group>"; };
+		7C44CF1427D11FA000F3C10B /* GrouponListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListRouter.swift; sourceTree = "<group>"; };
+		7C44CF1527D11FA100F3C10B /* GrouponListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListPresenter.swift; sourceTree = "<group>"; };
+		7C44CF1C27D120C800F3C10B /* GrouponListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListCoordinator.swift; sourceTree = "<group>"; };
+		7C44CF1E27D1216400F3C10B /* GrouponListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListProvider.swift; sourceTree = "<group>"; };
 		7CACE07F27D0CE9D005B6479 /* GenericCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
 		7CACE08027D0CE9D005B6479 /* GenericCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericCell.xib; sourceTree = "<group>"; };
+		7CACE08427D0D713005B6479 /* SplashDosPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashDosPresenter.swift; sourceTree = "<group>"; };
+		7CACE08527D0D713005B6479 /* SplashDosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashDosRouter.swift; sourceTree = "<group>"; };
+		7CACE08627D0D713005B6479 /* SplashDosInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashDosInteractor.swift; sourceTree = "<group>"; };
+		7CACE08727D0D713005B6479 /* SplashDosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashDosViewController.xib; sourceTree = "<group>"; };
+		7CACE08827D0D713005B6479 /* SplashDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashDosViewController.swift; sourceTree = "<group>"; };
+		7CACE08F27D0D7C4005B6479 /* SplashDosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDosCoordinator.swift; sourceTree = "<group>"; };
+		7CACE09527D10354005B6479 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		7CACE09627D10354005B6479 /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		7CACE09927D103D5005B6479 /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
 		7CCDE67A27C654B3006523F6 /* GrouponForNttdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouponForNttdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCDE67D27C654B3006523F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCDE68627C654B5006523F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,14 +82,12 @@
 		7CCDE69E27C65CEB006523F6 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		7CCDE6A227C65D02006523F6 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		7CCDE6AC27C65D45006523F6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7CCDE6AF27C65DA8006523F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7CCDE6B227C66B70006523F6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7CCDE6B527C66E07006523F6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7CCDE6B727C77213006523F6 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NttDataGrouponServerModel.swift; sourceTree = "<group>"; };
 		7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
-		7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NttDataGrouponBusinessModel.swift; sourceTree = "<group>"; };
 		8EDAFA30CB9B31E0E0B73CD0 /* Pods-GrouponForNttdata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.release.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.release.xcconfig"; sourceTree = "<group>"; };
 		931317391E311E848C4C5FF5 /* Pods-GrouponForNttdata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNttdata.debug.xcconfig"; path = "Target Support Files/Pods-GrouponForNttdata/Pods-GrouponForNttdata.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C0F699627D7631200420D1E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7C0F699727D7634D00420D1E /* GrouponCell.swift */,
+				7C0F699827D7634D00420D1E /* GrouponCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7CACE07E27D0CE78005B6479 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +120,67 @@
 				7CACE08027D0CE9D005B6479 /* GenericCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		7CACE08327D0D67E005B6479 /* Splash2 */ = {
+			isa = PBXGroup;
+			children = (
+				7CACE08827D0D713005B6479 /* SplashDosViewController.swift */,
+				7CACE08727D0D713005B6479 /* SplashDosViewController.xib */,
+				7CACE08427D0D713005B6479 /* SplashDosPresenter.swift */,
+				7CACE08627D0D713005B6479 /* SplashDosInteractor.swift */,
+				7CACE08527D0D713005B6479 /* SplashDosRouter.swift */,
+			);
+			path = Splash2;
+			sourceTree = "<group>";
+		};
+		7CACE09127D10114005B6479 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7CACE09527D10354005B6479 /* HomeTabBarViewController.swift */,
+				7CACE09627D10354005B6479 /* HomeTabBarViewController.xib */,
+				7CACE09927D103D5005B6479 /* HomeTabBarCoordinator.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		7CACE09227D10156005B6479 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */,
+				7CACE08F27D0D7C4005B6479 /* SplashDosCoordinator.swift */,
+				7C44CF1C27D120C800F3C10B /* GrouponListCoordinator.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		7CACE09327D10190005B6479 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */,
+				7C44CF1E27D1216400F3C10B /* GrouponListProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		7CACE09427D101FA005B6479 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		7CACE09B27D10459005B6479 /* GrouponList */ = {
+			isa = PBXGroup;
+			children = (
+				7C0F699627D7631200420D1E /* Cell */,
+				7C44CF1327D11FA000F3C10B /* GrouponListInteractor.swift */,
+				7C44CF1527D11FA100F3C10B /* GrouponListPresenter.swift */,
+				7C44CF1427D11FA000F3C10B /* GrouponListRouter.swift */,
+				7C44CF1227D11FA000F3C10B /* GrouponListViewController.swift */,
+				7C0F699427D75F1A00420D1E /* GrouponListViewController.xib */,
+			);
+			path = GrouponList;
 			sourceTree = "<group>";
 		};
 		7CCDE67127C654B2006523F6 = {
@@ -100,6 +204,9 @@
 		7CCDE67C27C654B3006523F6 /* GrouponForNttdata */ = {
 			isa = PBXGroup;
 			children = (
+				7CACE09427D101FA005B6479 /* CoreDataStack */,
+				7CACE09327D10190005B6479 /* Providers */,
+				7CACE09227D10156005B6479 /* Infrastructure */,
 				7CCDE6B427C66DF4006523F6 /* NetworkService */,
 				7CCDE6B127C66B4E006523F6 /* CoreApp */,
 				7CCDE6AE27C65D97006523F6 /* Utils+Helpers */,
@@ -131,6 +238,9 @@
 		7CCDE69527C65CB1006523F6 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				7CACE09B27D10459005B6479 /* GrouponList */,
+				7CACE09127D10114005B6479 /* HomeTabBar */,
+				7CACE08327D0D67E005B6479 /* Splash2 */,
 				7CCDE69627C65CB7006523F6 /* Splash */,
 			);
 			path = Sections;
@@ -141,7 +251,6 @@
 			children = (
 				7CACE07E27D0CE78005B6479 /* Cell */,
 				7CCDE6A727C65D1A006523F6 /* Models */,
-				7CCDE6A427C65D05006523F6 /* Coordinator */,
 				7CCDE69827C65CD2006523F6 /* SplashViewController.swift */,
 				7CCDE69927C65CD2006523F6 /* SplashViewController.xib */,
 				7CCDE69C27C65CE0006523F6 /* SplashPresenter.swift */,
@@ -151,21 +260,11 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		7CCDE6A427C65D05006523F6 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				7CCDE6A527C65D14006523F6 /* SplashCoordinator.swift */,
-				7CCDE6BB27C7E5DA006523F6 /* SplashProvider.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		7CCDE6A727C65D1A006523F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				7CCDE6B927C7E57A006523F6 /* NttDataGrouponServerModel.swift */,
-				7CCDE6BD27C7E710006523F6 /* NttDataGrouponBusinessModel.swift */,
-				7CCDE6AC27C65D45006523F6 /* ViewModel.swift */,
+				7C0F699B27D76BCD00420D1E /* CardViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,10 +372,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CACE08C27D0D713005B6479 /* SplashDosViewController.xib in Resources */,
+				7CACE09827D10354005B6479 /* HomeTabBarViewController.xib in Resources */,
+				7C0F699A27D7634D00420D1E /* GrouponCell.xib in Resources */,
 				7CCDE68A27C654B5006523F6 /* LaunchScreen.storyboard in Resources */,
 				7CACE08227D0CE9D005B6479 /* GenericCell.xib in Resources */,
 				7CCDE69B27C65CD2006523F6 /* SplashViewController.xib in Resources */,
 				7CCDE68727C654B5006523F6 /* Assets.xcassets in Resources */,
+				7C0F699527D75F1A00420D1E /* GrouponListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,19 +432,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CACE08927D0D713005B6479 /* SplashDosPresenter.swift in Sources */,
+				7CACE09A27D103D5005B6479 /* HomeTabBarCoordinator.swift in Sources */,
+				7C0F699927D7634D00420D1E /* GrouponCell.swift in Sources */,
 				7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */,
+				7C44CF1D27D120C800F3C10B /* GrouponListCoordinator.swift in Sources */,
+				7C0F699C27D76BCD00420D1E /* CardViewModel.swift in Sources */,
+				7C44CF1F27D1216400F3C10B /* GrouponListProvider.swift in Sources */,
+				7CACE08A27D0D713005B6479 /* SplashDosRouter.swift in Sources */,
 				7CCDE6B827C77213006523F6 /* NetworkError.swift in Sources */,
-				7CCDE6BE27C7E710006523F6 /* NttDataGrouponBusinessModel.swift in Sources */,
-				7CCDE6AD27C65D45006523F6 /* ViewModel.swift in Sources */,
+				7CACE09027D0D7C4005B6479 /* SplashDosCoordinator.swift in Sources */,
 				7CCDE69A27C65CD2006523F6 /* SplashViewController.swift in Sources */,
 				7CCDE6A327C65D02006523F6 /* SplashRouter.swift in Sources */,
 				7CCDE67E27C654B3006523F6 /* AppDelegate.swift in Sources */,
+				7C44CF1927D11FA100F3C10B /* GrouponListRouter.swift in Sources */,
 				7CCDE6BA27C7E57A006523F6 /* NttDataGrouponServerModel.swift in Sources */,
+				7CACE09727D10354005B6479 /* HomeTabBarViewController.swift in Sources */,
 				7CCDE69F27C65CEB006523F6 /* SplashInteractor.swift in Sources */,
 				7CACE08127D0CE9D005B6479 /* GenericCell.swift in Sources */,
+				7C44CF1A27D11FA100F3C10B /* GrouponListPresenter.swift in Sources */,
 				7CCDE6B027C65DA8006523F6 /* Utils.swift in Sources */,
 				7CCDE6A627C65D14006523F6 /* SplashCoordinator.swift in Sources */,
 				7CCDE69327C65875006523F6 /* BaseViper.swift in Sources */,
+				7C44CF1727D11FA100F3C10B /* GrouponListViewController.swift in Sources */,
+				7CACE08B27D0D713005B6479 /* SplashDosInteractor.swift in Sources */,
+				7CACE08D27D0D713005B6479 /* SplashDosViewController.swift in Sources */,
+				7C44CF1827D11FA100F3C10B /* GrouponListInteractor.swift in Sources */,
 				7CCDE6B627C66E07006523F6 /* NetworkService.swift in Sources */,
 				7CCDE6BC27C7E5DA006523F6 /* SplashProvider.swift in Sources */,
 				7CCDE69D27C65CE0006523F6 /* SplashPresenter.swift in Sources */,

@@ -26,7 +26,7 @@ final class AppAssembly: AppAssemblyProtocol {
 	private func customTabBar() {
 		let tabBar = UITabBar.appearance()
 		
-		tabBar.tintColor = UIColor.red
+		tabBar.tintColor = CustomColor.textIcons.uiColor
 		tabBar.backgroundColor = UIColor.white
 		tabBar.barStyle = .default
 
