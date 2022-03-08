@@ -36,16 +36,42 @@ class GrouponListViewController: UIViewController, ViewInterface {
     // MARK: - Dependencias
     var presenter: GrouponListPresenterViewInterface!
     
+	// MARK: - IBOutlets
+	@IBOutlet weak var cuponListTableView: UITableView!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-		
+		self.presenter.updateView()
+		self.setupTableView()
     }
 
+	func setupTableView() {
+		self.cuponListTableView.delegate = self
+		self.cuponListTableView.dataSource = self
+		self.cuponListTableView.register(UINib(nibName: GrouponCell.defaultReuseIdentifierView, bundle: nil), forCellReuseIdentifier: GrouponCell.defaultReuseIdentifierView)
+	}
+	
 }
 
 extension GrouponListViewController: GrouponListViewPresenterInterface {
 
     func reloadInformationInView() {
-		
+		self.cuponListTableView.reloadData()
     }
+}
+
+extension GrouponListViewController: UITableViewDelegate, UITableViewDataSource {
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		self.presenter.numberOfRow()
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cellCupon = self.cuponListTableView.dequeueReusableCell(withIdentifier: GrouponCell.defaultReuseIdentifierView, for: indexPath) as! GrouponCell
+		if let model = self.presenter.objectFor(index: indexPath.row) {
+			cellCupon.configCell(data: model)
+		}
+		return cellCupon
+	}
+	
 }

@@ -11,6 +11,7 @@
 		7C0F699927D7634D00420D1E /* GrouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F699727D7634D00420D1E /* GrouponCell.swift */; };
 		7C0F699A27D7634D00420D1E /* GrouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0F699827D7634D00420D1E /* GrouponCell.xib */; };
 		7C0F699C27D76BCD00420D1E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F699B27D76BCD00420D1E /* CardViewModel.swift */; };
+		7C0F699E27D787DB00420D1E /* DDBBCoreStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0F699D27D787DB00420D1E /* DDBBCoreStack.swift */; };
 		7C44CF1727D11FA100F3C10B /* GrouponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1227D11FA000F3C10B /* GrouponListViewController.swift */; };
 		7C44CF1827D11FA100F3C10B /* GrouponListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1327D11FA000F3C10B /* GrouponListInteractor.swift */; };
 		7C44CF1927D11FA100F3C10B /* GrouponListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44CF1427D11FA000F3C10B /* GrouponListRouter.swift */; };
@@ -53,6 +54,7 @@
 		7C0F699727D7634D00420D1E /* GrouponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrouponCell.swift; sourceTree = "<group>"; };
 		7C0F699827D7634D00420D1E /* GrouponCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrouponCell.xib; sourceTree = "<group>"; };
 		7C0F699B27D76BCD00420D1E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		7C0F699D27D787DB00420D1E /* DDBBCoreStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDBBCoreStack.swift; sourceTree = "<group>"; };
 		7C44CF1227D11FA000F3C10B /* GrouponListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListViewController.swift; sourceTree = "<group>"; };
 		7C44CF1327D11FA000F3C10B /* GrouponListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListInteractor.swift; sourceTree = "<group>"; };
 		7C44CF1427D11FA000F3C10B /* GrouponListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrouponListRouter.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				7CCDE6AF27C65DA8006523F6 /* Utils.swift */,
+				7C0F699D27D787DB00420D1E /* DDBBCoreStack.swift */,
 			);
 			path = "Utils+Helpers";
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CACE08927D0D713005B6479 /* SplashDosPresenter.swift in Sources */,
+				7C0F699E27D787DB00420D1E /* DDBBCoreStack.swift in Sources */,
 				7CACE09A27D103D5005B6479 /* HomeTabBarCoordinator.swift in Sources */,
 				7C0F699927D7634D00420D1E /* GrouponCell.swift in Sources */,
 				7CCDE6B327C66B70006523F6 /* AppCoordinator.swift in Sources */,

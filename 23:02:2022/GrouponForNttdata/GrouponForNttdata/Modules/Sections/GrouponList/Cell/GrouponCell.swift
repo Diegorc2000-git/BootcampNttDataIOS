@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 protocol GrouponCellProtocol {
-	func configCell(data: DataViewModel)
+	func configCell(data: CardViewModel)
 }
 
 class GrouponCell: UITableViewCell, ReuseIdentifierView {
@@ -38,8 +38,26 @@ class GrouponCell: UITableViewCell, ReuseIdentifierView {
 
 
 extension GrouponCell: GrouponCellProtocol {
-	func configCell(data: DataViewModel) {
-		
+	func configCell(data: CardViewModel) {
+		let url = URL(string: data.largeImageUrl ?? "")
+		self.myImageGrouponView.layer.cornerRadius = 20
+		self.myImageGrouponView.layer.borderColor = UIColor.gray.cgColor
+		self.myImageGrouponView.layer.borderWidth = 1
+		self.myImageGrouponView.kf.setImage(with: url,
+											placeholder: UIImage(named: "placeHolder"),
+											options: [
+												.scaleFactor(UIScreen.main.scale),
+												.transition(.fade(1)),
+												.cacheOriginalImage
+											],
+											completionHandler: nil)
+		self.myTendenciaLabel.text = "Tendencias"
+		if !(data.tags?.isEmpty ?? false) {
+			self.myTitleLabel.text = data.tags?[0].name ?? ""
+		}
+		self.myDescriptionLabel.text = data.descriptor
+		self.myPriceLabel.text = "Desde \(data.priceSummary?.value?.formattedAmount ?? "")"
+		self.myPromotionLabel.text = data.highlightsHtml
 	}
 	
 }
