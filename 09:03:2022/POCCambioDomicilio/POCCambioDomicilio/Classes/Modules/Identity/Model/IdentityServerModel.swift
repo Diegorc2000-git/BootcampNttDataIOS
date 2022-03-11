@@ -7,6 +7,8 @@
 
 import Foundation
 
+//ConsultaIdentidad
+
 // MARK: - IdentityModel
 struct IdentityServerModel: Codable {
 	let atributos: Atributos?

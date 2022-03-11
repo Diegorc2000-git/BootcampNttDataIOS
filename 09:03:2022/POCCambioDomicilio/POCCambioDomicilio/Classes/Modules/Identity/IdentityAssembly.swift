@@ -19,6 +19,7 @@ final class IdentityAssembly: ModulesInterface {
 	
 	func navigation() -> UINavigationController {
 		UINavigationController(rootViewController: build())
+		
 	}
 
 	func build() -> UIViewController {
@@ -30,8 +31,4 @@ final class IdentityAssembly: ModulesInterface {
 		router.viewController = view
 		return view
 	}
-}
-
-struct IdentityAssemblyDTO {
-	
 }

@@ -16,8 +16,8 @@ protocol IdentityPresenterInteractorInterface: PresenterInteractorInterface {
 }
 
 protocol IdentityPresenterViewInterface: PresenterViewInterface {
+	func fetchDataIdentity()
 	func showMessageMoreInfoProfile()
-	func fetchDataProfile()
 	var dataCellModel: ProfileCellModel? { get set }
 }
 
@@ -26,8 +26,10 @@ final class IdentityPresenter: PresenterInterface {
 	var router: IdentityRouterPresenterInterface!
 	var interactor: IdentityInteractorPresenterInterface!
 	weak var view: IdentityViewPresenterInterface!
-		
+	
+
 	var dataCellModel: ProfileCellModel?
+	
 }
 
 extension IdentityPresenter: IdentityPresenterRouterInterface {
@@ -38,31 +40,34 @@ extension IdentityPresenter: IdentityPresenterInteractorInterface {
 	
 	func getDataProfileView(data: ProfileViewModel) {
 		self.dataCellModel = ProfileCellModel(photo: nil,
-											  greeting: "Hola",
-											  name: data.name,
-											  lastUpdate: data.lastUpdate,
-											  lastNamePlaceHolder: LocalizedKeys.Identity.IdentityLastNamePlaceHolder,
+											   greeting: "Hola",
+											   name: data.name,
+											   lastUpdate: data.lastUpdate,
+											  lastNamePlaceHolder: "Apellidos",
 											  lastNameData: data.lastName,
-											  identityDocPlaceHolder: LocalizedKeys.Identity.IdentityNIFPlaceHolder,
+											  identityDocPlaceHolder: "NIF",
 											  identityData: data.identityDoc,
-											  validityPlaceHolder: LocalizedKeys.Identity.IdentityValidationPlaceHolder,
+											  validityPlaceHolder: "Validez",
 											  validityData: data.validityData,
-											  addressPlaceHolder: LocalizedKeys.Identity.IdentityAddressRegisteredPlaceHolder,
+											  addressPlaceHolder: "DomicilioEmpadronado",
 											  addressData: data.addressData,
-											  cityPlaceHolder: LocalizedKeys.Identity.IdentityCityPlaceHolder,
-											  cityData: data.cityData)
+											  cityPlaceHolder: "Ciudad",
+											   cityData: data.cityData)
 		self.view.reloadInformationInView()
 	}
 	
 }
 
 extension IdentityPresenter: IdentityPresenterViewInterface {
-	
-	func fetchDataProfile() {
+	func fetchDataIdentity() {
+		
 		self.interactor.fetchDataIdentityInteractor()
 	}
 	
 	func showMessageMoreInfoProfile() {
-		self.router?.navigateToMessage()
+		self.router.showMessageMoreInfoProfile()
 	}
+	
+	
+	
 }

@@ -53,9 +53,9 @@
 		7CF6026127DB528600CFFB31 /* IdentityBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6026027DB528600CFFB31 /* IdentityBusinessModel.swift */; };
 		7CF6026327DB536E00CFFB31 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6026227DB536E00CFFB31 /* ProfileViewModel.swift */; };
 		7CF6026527DB539600CFFB31 /* AddressServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6026427DB539600CFFB31 /* AddressServerModel.swift */; };
-		7CF6026727DB53A900CFFB31 /* AddressBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6026627DB53A900CFFB31 /* AddressBusinessModel.swift */; };
 		7CF6026A27DB5C5B00CFFB31 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6026827DB5C5B00CFFB31 /* ProfileCell.swift */; };
 		7CF6026B27DB5C5B00CFFB31 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6026927DB5C5B00CFFB31 /* ProfileCell.xib */; };
+		7CF6028E27DB992200CFFB31 /* AdressBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6028D27DB992200CFFB31 /* AdressBusinessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,9 +108,9 @@
 		7CF6026027DB528600CFFB31 /* IdentityBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityBusinessModel.swift; sourceTree = "<group>"; };
 		7CF6026227DB536E00CFFB31 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		7CF6026427DB539600CFFB31 /* AddressServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressServerModel.swift; sourceTree = "<group>"; };
-		7CF6026627DB53A900CFFB31 /* AddressBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBusinessModel.swift; sourceTree = "<group>"; };
 		7CF6026827DB5C5B00CFFB31 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		7CF6026927DB5C5B00CFFB31 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		7CF6028D27DB992200CFFB31 /* AdressBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressBusinessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,7 +312,7 @@
 				7CF6026027DB528600CFFB31 /* IdentityBusinessModel.swift */,
 				7CF6026227DB536E00CFFB31 /* ProfileViewModel.swift */,
 				7CF6026427DB539600CFFB31 /* AddressServerModel.swift */,
-				7CF6026627DB53A900CFFB31 /* AddressBusinessModel.swift */,
+				7CF6028D27DB992200CFFB31 /* AdressBusinessModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,11 +403,11 @@
 				7CF6022D27D9115400CFFB31 /* IdentityAssembly.swift in Sources */,
 				7CF6026127DB528600CFFB31 /* IdentityBusinessModel.swift in Sources */,
 				7CF6020F27D90FA000CFFB31 /* LoginInteractor.swift in Sources */,
-				7CF6026727DB53A900CFFB31 /* AddressBusinessModel.swift in Sources */,
 				7CF6023C27D913BF00CFFB31 /* Constants.swift in Sources */,
 				7CF6021127D90FA900CFFB31 /* LoginRouter.swift in Sources */,
 				7CF6023627D9134B00CFFB31 /* NetworkService.swift in Sources */,
 				7CF6023527D9134B00CFFB31 /* NetworkError.swift in Sources */,
+				7CF6028E27DB992200CFFB31 /* AdressBusinessModel.swift in Sources */,
 				7CF6023927D9138500CFFB31 /* Utils.swift in Sources */,
 				7CF6021B27D910FB00CFFB31 /* MessageRouter.swift in Sources */,
 				7CF6021827D910B700CFFB31 /* MessageViewController.swift in Sources */,

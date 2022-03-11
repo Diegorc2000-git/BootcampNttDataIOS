@@ -33,5 +33,13 @@ final class MessageAssembly: ModulesInterface {
 }
 
 struct MessageAssemblyDTO {
+	let titulo: String?
+	let contenido: String?
+	let botones: Bool?
 	
+	init(titulo: String?, contenido: String?, botones: Bool) {
+		self.titulo = titulo
+		self.contenido = contenido
+		self.botones = botones
+	}
 }
