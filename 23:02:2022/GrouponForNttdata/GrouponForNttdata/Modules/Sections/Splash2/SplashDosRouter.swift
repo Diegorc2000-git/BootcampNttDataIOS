@@ -2,7 +2,7 @@
 //  SplashDosRouter.swift
 //  GrouponForEveris
 //
-//  Created by Andres Felipe Ocampo Eljaiek on 6/8/21.
+//  Created by Diego Rodriguez Casillas 9/3/22.
 //
 
 import Foundation

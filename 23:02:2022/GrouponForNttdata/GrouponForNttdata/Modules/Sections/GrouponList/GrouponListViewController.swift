@@ -74,4 +74,8 @@ extension GrouponListViewController: UITableViewDelegate, UITableViewDataSource 
 		return cellCupon
 	}
 	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		self.presenter.showDetailViewController(index: indexPath.row)
+	}
+	
 }

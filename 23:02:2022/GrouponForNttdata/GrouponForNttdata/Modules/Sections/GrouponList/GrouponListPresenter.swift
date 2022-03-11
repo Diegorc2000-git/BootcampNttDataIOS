@@ -39,6 +39,7 @@ protocol GrouponListPresenterViewInterface: PresenterViewInterface {
 	func updateView()
     func numberOfRow() -> Int
 	func objectFor(index: Int) -> CardViewModel?
+	func showDetailViewController(index: Int)
 }
 
 final class GrouponListPresenter: PresenterInterface {
@@ -65,6 +66,12 @@ extension GrouponListPresenter: GrouponListPresenterInteractorInterface {
 }
 
 extension GrouponListPresenter: GrouponListPresenterViewInterface {
+	
+	func showDetailViewController(index: Int) {
+		if let dataModel = self.arrayData[index].data {
+			self.router.showDetailViewController(data: dataModel)
+		}
+	}
 	
 	func updateView() {
 		self.view.reloadInformationInView()

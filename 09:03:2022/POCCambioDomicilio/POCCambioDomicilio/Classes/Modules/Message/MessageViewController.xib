@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController" customModule="POCCambioDomicilio" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonClose" destination="sfT-zg-d4W" id="nbG-uR-XxF"/>
+                <outlet property="descriptionInformation" destination="B49-jf-peI" id="PUo-OK-ouC"/>
+                <outlet property="titleInformation" destination="34b-sW-57K" id="e5w-Ct-IjE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="cAo-bx-CXe" id="2Ho-AN-blG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAo-bx-CXe">
+                    <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34b-sW-57K">
+                            <rect key="frame" x="24" y="24" width="75" height="38.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B49-jf-peI">
+                            <rect key="frame" x="24" y="94.5" width="366" height="264"/>
+                            <mutableString key="text">This example will tell you how to create and use the UISwitch component both in Xcode interface builder and swift source code. It will add one label, one UISwitch to the Main.storyboard. And the other UISwitch component is created and used in ViewController.swift file uses source code                     programmatically.                                                                                                                                                                                                          Let us first look at the example demo belowThis example will tell you how to create and use the UISwitch component both in Xcode interface builder and swift source code. It will add one label, one UISwitch to the Main.storyboard. </mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfT-zg-d4W">
+                            <rect key="frame" x="358" y="24" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="7uZ-IA-OPq"/>
+                                <constraint firstAttribute="height" constant="32" id="Ryq-8R-OVR"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="close_modal"/>
+                            <connections>
+                                <action selector="buttonClosePressed:" destination="-1" eventType="touchUpInside" id="30S-oL-3YJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="34b-sW-57K" firstAttribute="top" secondItem="cAo-bx-CXe" secondAttribute="top" constant="24" id="9Fh-kM-3Ba"/>
+                        <constraint firstItem="B49-jf-peI" firstAttribute="top" secondItem="34b-sW-57K" secondAttribute="bottom" constant="32" id="BRh-Yb-YRA"/>
+                        <constraint firstItem="34b-sW-57K" firstAttribute="leading" secondItem="cAo-bx-CXe" secondAttribute="leading" constant="24" id="C5e-61-Usb"/>
+                        <constraint firstAttribute="trailing" secondItem="sfT-zg-d4W" secondAttribute="trailing" constant="24" id="MyT-yl-47S"/>
+                        <constraint firstItem="B49-jf-peI" firstAttribute="leading" secondItem="cAo-bx-CXe" secondAttribute="leading" constant="24" id="lCq-rr-1ta"/>
+                        <constraint firstAttribute="height" constant="400" id="lG6-Ph-x6a"/>
+                        <constraint firstItem="sfT-zg-d4W" firstAttribute="top" secondItem="cAo-bx-CXe" secondAttribute="top" constant="24" id="vvx-Wq-ItW"/>
+                        <constraint firstAttribute="trailing" secondItem="B49-jf-peI" secondAttribute="trailing" constant="24" id="wzx-jf-HWa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="placeholderTextColor"/>
+            <constraints>
+                <constraint firstItem="cAo-bx-CXe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PSz-q3-NIJ"/>
+                <constraint firstItem="cAo-bx-CXe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VJa-eQ-Vcn"/>
+                <constraint firstAttribute="bottom" secondItem="cAo-bx-CXe" secondAttribute="bottom" id="ZDT-Gx-M0D"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_modal" width="32" height="32"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

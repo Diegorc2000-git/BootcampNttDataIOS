@@ -29,7 +29,7 @@ import Foundation
 import UIKit
 
 protocol GrouponListRouterPresenterInterface: RouterPresenterInterface {
-
+	func showDetailViewController(data: CardViewModel)
 }
 
 final class GrouponListRouter: RouterInterface {
@@ -39,5 +39,12 @@ final class GrouponListRouter: RouterInterface {
 }
 
 extension GrouponListRouter: GrouponListRouterPresenterInterface {
-    
+
+	func showDetailViewController(data: CardViewModel) {
+		DispatchQueue.main.async {
+			let vc = GrouponListDetailCoordinator().build(dto: GrouponListDetailCoordinatorDTO(dataModel: data))
+			self.viewController?.navigationController?.pushViewController(vc, animated: true)
+		}
+	}
+	
 }

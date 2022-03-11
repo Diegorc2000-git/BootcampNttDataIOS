@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="POCCambioDomicilio" customModuleProvider="target">
+            <connections>
+                <outlet property="animatedView" destination="U5o-8c-hEc" id="mR8-mp-Mn9"/>
+                <outlet property="backGroundView" destination="i5M-Pr-FkT" id="cjf-hV-EHn"/>
+                <outlet property="buttonContinue" destination="e77-Lo-57e" id="Pnf-Ks-iKH"/>
+                <outlet property="imageView" destination="281-1D-5u1" id="zlE-r6-Mh7"/>
+                <outlet property="subtitleLabel" destination="K3X-8u-aYV" id="L1H-jk-wZK"/>
+                <outlet property="titleLabel" destination="bwW-nE-c6Z" id="Mr1-um-0TI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="OV5-Ea-Rkc"/>
+                <outlet property="viewHeight" destination="Yx8-fl-D8P" id="YgS-tD-o4f"/>
+                <outlet property="viewHeightImage" destination="c9u-Wt-2Oj" id="Z0l-La-qod"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="281-1D-5u1">
+                    <rect key="frame" x="24" y="392" width="230" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="JrV-kq-Lxh"/>
+                        <constraint firstAttribute="width" constant="230" id="Me2-mp-xNL"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-8c-hEc">
+                    <rect key="frame" x="0.0" y="866" width="414" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Cambio de domicilio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwW-nE-c6Z">
+                            <rect key="frame" x="12" y="32" width="390" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" name="color10"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Comunica a los distintos organismos tu cambio de domicilio sin tener que realizarlo presencialmente" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3X-8u-aYV">
+                            <rect key="frame" x="12" y="69" width="390" height="124.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                            <color key="textColor" name="color10"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e77-Lo-57e">
+                            <rect key="frame" x="24" y="293.5" width="366" height="52"/>
+                            <color key="backgroundColor" name="color10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="FNg-PG-szj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="_Continuar">
+                                <color key="titleColor" name="Color"/>
+                            </state>
+                            <connections>
+                                <action selector="navigateToLogin:" destination="-1" eventType="touchUpInside" id="7s7-im-aJN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="Color"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bwW-nE-c6Z" secondAttribute="trailing" constant="12" id="81p-dp-Gzf"/>
+                        <constraint firstItem="K3X-8u-aYV" firstAttribute="top" secondItem="bwW-nE-c6Z" secondAttribute="bottom" constant="8" id="M1c-pJ-ssx"/>
+                        <constraint firstItem="e77-Lo-57e" firstAttribute="top" secondItem="K3X-8u-aYV" secondAttribute="bottom" constant="100" id="Pz8-Vb-Bs9"/>
+                        <constraint firstAttribute="trailing" secondItem="e77-Lo-57e" secondAttribute="trailing" constant="24" id="SZS-zD-qR1"/>
+                        <constraint firstItem="bwW-nE-c6Z" firstAttribute="leading" secondItem="U5o-8c-hEc" secondAttribute="leading" constant="12" id="TPS-Ig-3Of"/>
+                        <constraint firstItem="bwW-nE-c6Z" firstAttribute="top" secondItem="U5o-8c-hEc" secondAttribute="top" constant="32" id="YMt-sl-TFT"/>
+                        <constraint firstAttribute="height" constant="30" id="Yx8-fl-D8P"/>
+                        <constraint firstAttribute="trailing" secondItem="K3X-8u-aYV" secondAttribute="trailing" constant="12" id="chW-Z7-QNw"/>
+                        <constraint firstItem="K3X-8u-aYV" firstAttribute="leading" secondItem="U5o-8c-hEc" secondAttribute="leading" constant="12" id="giH-7v-EpB"/>
+                        <constraint firstItem="e77-Lo-57e" firstAttribute="leading" secondItem="U5o-8c-hEc" secondAttribute="leading" constant="24" id="xAZ-eo-uTc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="U5o-8c-hEc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IVt-hH-Gea"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="281-1D-5u1" secondAttribute="bottom" constant="350" id="c9u-Wt-2Oj"/>
+                <constraint firstItem="U5o-8c-hEc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tCc-Fh-Eae"/>
+                <constraint firstItem="281-1D-5u1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="v1W-Hv-i0u"/>
+                <constraint firstAttribute="bottom" secondItem="U5o-8c-hEc" secondAttribute="bottom" id="wnU-6V-Na7"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="104.46428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="640" height="111"/>
+        <namedColor name="Color">
+            <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color10">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
