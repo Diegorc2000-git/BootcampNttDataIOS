@@ -16,7 +16,7 @@ class AppCoordinator: AppCoordinatorProtocol {
 	
 	private var initialVC = UIViewController()
 	internal func showInitialApp(window: UIWindow) {
-		initialVC = SplashAssembly().build()
+		initialVC = IdentityAssembly().build()
 		window.rootViewController = initialVC
 		window.makeKeyAndVisible()
 	}

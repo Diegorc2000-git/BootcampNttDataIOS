@@ -54,7 +54,7 @@ class SplashViewController: UIViewController, ViewInterface {
 		self.subtitleLabel.isHidden = true
 		
 		self.buttonContinue.layer.cornerRadius = 10
-		self.buttonContinue.setTitle("Continuar", for: .normal)
+		self.buttonContinue.setTitle(LocalizedKeys.Generic.genericContinueButton, for: .normal)
 		self.buttonContinue.isHidden = true
 		
 	}
@@ -64,7 +64,7 @@ class SplashViewController: UIViewController, ViewInterface {
 		view.layoutIfNeeded()
 		if firstClick {
 			self.viewHeight.constant = 400
-			self.titleLabel.text = "Una relacion ágil y sencillas con las administraciones públicas"
+			self.titleLabel.text = LocalizedKeys.Splash.splashFirstTitleLabel
 			
 		} else {
 			self.viewHeight.constant = 600
@@ -84,8 +84,8 @@ class SplashViewController: UIViewController, ViewInterface {
 					   animations: {
 			self.view.layoutIfNeeded()
 			if !self.firstClick{
-				self.titleLabel.text = "Cambio de domicilio"
-				self.subtitleLabel.text = "Comunica a los distintos organismos tu cambio de domicilio sin tener que realizarlo presencialmente"
+				self.titleLabel.text = LocalizedKeys.Splash.splashSecondTitleLabel
+				self.subtitleLabel.text = LocalizedKeys.Splash.splashSubtitleLabel
 			}
 		}, completion: {
 			(value: Bool) in

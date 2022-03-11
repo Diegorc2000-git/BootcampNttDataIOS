@@ -1,0 +1,25 @@
+// Generic
+"generic_continue_button" = "Continue";
+
+// Splash
+"splash_first_title_label" = "An agile and simple relationship with public administrations";
+"splash_second_title_label" = "Address change";
+"splash_subtitle_label" = "Communicate your change of address to the different organizations without having to do it in person";
+
+// Login
+"login_title_label" = "To access the notification of change of address, you must do so through your electronic identity Key";
+"login_switch_text_label" = "I have read and accept the legal conditions";
+"login_button_continue_text_label" = "Access with Key";
+"login_button_question_text_label" = "¿What is the Key?";
+
+// Message
+"message_title_label" = "Info";
+"message_description_label" = "Once you have completed a new registration, here you will be able to notify the different administration bodies (such as the General Directorate of Traffic, the tax agency and Social Security, among others), of your change of address without having to do it in person at each of them. \n\n In the event that the correct information for the last registration carried out does not appear, you should contact your registration office.";
+
+// Identity
+"identity_greeting_label"= "Hello";
+"identity_last_name_placeHolder" = "Last Name";
+"identity_nif_placeHolder" = "NIF";
+"identity_validation_placeHolder" = "validation";
+"identity_address_registered_placeHolder" = "Registered Address";
+"identity_city_placeHolder" = "City";

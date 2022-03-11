@@ -34,10 +34,10 @@ class MessageViewController: UIViewController, ViewInterface {
 	func setupView() {
 		self.viewContainer.layer.cornerRadius = 20
 		
-		self.titleInformation.text = "Info"
+		self.titleInformation.text = LocalizedKeys.Message.messageTitleLabel
 		self.titleInformation.textColor = CustomColor.color1.uiColor
 		
-		self.descriptionInformation.text = "Una vez realizado un nuevo empadronamiento, aqui podrás comunicar a los distintos organismos de la administración (como Dirección general de tráfico, agencia tributaria y Seguridad social entre otros), tu cambio de domicilio sin tener que realizarlo presencialmente en cada uno de ellos. \n\n En el caso de no aparecer la información correcta del último empadronamiento realizado deberás ponerte en contacto con tu oficina de empadronamiento."
+		self.descriptionInformation.text = LocalizedKeys.Message.messageDescriptionLabel
 		
 	}
 	

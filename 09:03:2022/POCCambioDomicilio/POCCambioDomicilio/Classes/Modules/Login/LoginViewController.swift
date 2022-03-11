@@ -48,7 +48,7 @@ class LoginViewController: UIViewController, ViewInterface {
 	func setupView() {
 		self.topView.backgroundColor = CustomColor.color2.uiColor
 		
-		self.titleLabel.text = "Para acceder a la comunicación de cambio de domicilio, debes hacerlo mediante tu identidad electrónica Cl@ve"
+		self.titleLabel.text = LocalizedKeys.Login.loginTitleLabel
 		
 		self.iconImage.image = UIImage(named: "logo")
 		
@@ -56,16 +56,16 @@ class LoginViewController: UIViewController, ViewInterface {
 		self.switchOption.setOn(false, animated: false)
 		self.switchOption.addTarget(self, action: #selector(turnSecondSwitch), for: UIControl.Event.valueChanged)
 		
-		self.switchLabel.text = "He leído y acepto las Condiciones legales"
+		self.switchLabel.text = LocalizedKeys.Login.loginSwitchTextLabel
 		
 		self.buttonAccess.isUserInteractionEnabled = false
 		self.buttonAccess.backgroundColor = CustomColor.color11.uiColor
 		self.buttonAccess.setTitleColor(CustomColor.color5.uiColor, for: .normal)
 		self.buttonAccess.layer.cornerRadius = 10
-		self.buttonAccess.setTitle("Acceder con Cl@ve", for: .normal)
+		self.buttonAccess.setTitle(LocalizedKeys.Login.loginButtonContinueTextLabel, for: .normal)
 		
 		self.questionLabel.tintColor = CustomColor.color1.uiColor
-		self.questionLabel.text = "¿Qué es Cl@ve?"
+		self.questionLabel.text = LocalizedKeys.Login.loginButtonQuestionTextLabel
 		
 	}
 	

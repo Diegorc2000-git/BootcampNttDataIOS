@@ -1,0 +1,25 @@
+// Generic
+"generic_continue_button" = "Continuar";
+
+// Splash
+"splash_first_title_label" = "Una relacion ágil y sencillas con las administraciones públicas";
+"splash_second_title_label" = "Cambio de domicilio";
+"splash_subtitle_label" = "Comunica a los distintos organismos tu cambio de domicilio sin tener que realizarlo presencialmente";
+
+// Login
+"login_title_label" = "Para acceder a la comunicación de cambio de domicilio, debes hacerlo mediante tu identidad electrónica Cl@ve";
+"login_switch_text_label" = "He leído y acepto las Condiciones legales";
+"login_button_continue_text_label" = "Acceder con Cl@ve";
+"login_button_question_text_label" = "¿Qué es Cl@ve?";
+
+// Message
+"message_title_label" = "Info";
+"message_description_label" = "Una vez realizado un nuevo empadronamiento, aqui podrás comunicar a los distintos organismos de la administración (como Dirección general de tráfico, agencia tributaria y Seguridad social entre otros), tu cambio de domicilio sin tener que realizarlo presencialmente en cada uno de ellos. \n\n En el caso de no aparecer la información correcta del último empadronamiento realizado deberás ponerte en contacto con tu oficina de empadronamiento.";
+
+// Identity
+"identity_greeting_label"= "Hola";
+"identity_last_name_placeHolder" = "Apellido";
+"identity_nif_placeHolder" = "DNI";
+"identity_validation_placeHolder" = "Valídez";
+"identity_address_registered_placeHolder" = "Domicilio Empadronado";
+"identity_city_placeHolder" = "Ciudad";
