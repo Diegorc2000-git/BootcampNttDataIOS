@@ -1,8 +1,46 @@
 # BootcampNttDataIOS
 
+# APLICACIÓN FORMULA 1
+
+- Aplicacion con todo lo aprendido en la BootCamp
+- Custom Navigation Bar
+- Custom Tab Bar
+
+![Captura de pantalla 2022-03-14 a las 20 00 46](https://user-images.githubusercontent.com/85167928/158242424-f00b0b50-2bfd-4a75-9369-61c41576531c.png)
+
+# 13 NttDataMovies
+
+- Implementacion de Swift UI
+
+![Captura de pantalla 2022-03-14 a las 19 57 35](https://user-images.githubusercontent.com/85167928/158241945-a86da443-b827-4f41-973b-aea723578f2f.png)
+![Captura de pantalla 2022-03-14 a las 19 57 41](https://user-images.githubusercontent.com/85167928/158241952-3ca3ac29-811d-4603-ad10-12385d317f3c.png)
+
+# 12 POC Cambio Domicilio
+
+- Creacion del primer Splash animado + login + tabla con llamada a servicios (no sirve)
+
+![Captura de pantalla 2022-03-14 a las 19 56 10](https://user-images.githubusercontent.com/85167928/158241817-ac022c06-ef1f-41c6-8e3d-fccd6914a418.png)
+![Captura de pantalla 2022-03-14 a las 19 56 20](https://user-images.githubusercontent.com/85167928/158241820-3e852e05-6f23-4136-ba55-edaad786aa10.png)
+![Captura de pantalla 2022-03-14 a las 19 56 25](https://user-images.githubusercontent.com/85167928/158241825-ed879242-5273-4a73-8c3c-e3039df5548e.png)
+
+# 11 LocalizationApp
+
+- Implementcion de los localizables
+
+# 10 GrouponForNttdata
+
+- Aplicacion con llamada a servicios y todo Viper integrado
+
+![Captura de pantalla 2022-03-14 a las 19 52 57](https://user-images.githubusercontent.com/85167928/158241279-7b10504b-8f0a-40cb-a73a-6931ff8fd171.png)
+![Captura de pantalla 2022-03-14 a las 19 53 03](https://user-images.githubusercontent.com/85167928/158241288-7452caac-a96e-4695-9fcc-4cb2915b929f.png)
+![Captura de pantalla 2022-03-14 a las 19 53 20](https://user-images.githubusercontent.com/85167928/158241290-771c5725-61c3-47a3-a143-a027ec9e230f.png)
+![Captura de pantalla 2022-03-14 a las 19 53 13](https://user-images.githubusercontent.com/85167928/158241294-1f5b87d5-c47c-444a-ab45-3a3c19f9aeff.png)
+
 # 9 NTTDataApp
 
-- Aplicacion con todos los conocimientos aprendidos [WIP]
+- Aplicacion con todos los conocimientos aprendidos
+
+![Captura de pantalla 2022-03-14 a las 19 58 51](https://user-images.githubusercontent.com/85167928/158242206-19313c1c-9ebd-4f66-9427-67360e3af75d.png)
 
 # 8 NttdataTask
 
