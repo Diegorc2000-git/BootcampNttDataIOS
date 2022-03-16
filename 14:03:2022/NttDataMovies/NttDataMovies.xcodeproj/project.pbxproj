@@ -15,9 +15,6 @@
 		7CE0754427DFBFA000F83AF4 /* ControlFlujo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0754327DFBFA000F83AF4 /* ControlFlujo.swift */; };
 		7CE0754627DFBFAA00F83AF4 /* FashionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0754527DFBFAA00F83AF4 /* FashionContentView.swift */; };
 		7CE0754827DFBFBA00F83AF4 /* DetailFashionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0754727DFBFBA00F83AF4 /* DetailFashionContentView.swift */; };
-		7CE0754A27DFBFCC00F83AF4 /* HeaderComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0754927DFBFCC00F83AF4 /* HeaderComponents.swift */; };
-		7CE0754C27DFBFD400F83AF4 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0754B27DFBFD400F83AF4 /* CustomNavigationView.swift */; };
-		7CE0754E27DFBFDC00F83AF4 /* CustomMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0754D27DFBFDC00F83AF4 /* CustomMainView.swift */; };
 		7CE0755827DFC0EE00F83AF4 /* BaseVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0755727DFC0EE00F83AF4 /* BaseVP.swift */; };
 		7CE0755A27DFC10900F83AF4 /* MoviesBussinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0755927DFC10900F83AF4 /* MoviesBussinesModel.swift */; };
 		7CE0755C27DFC11200F83AF4 /* MoviesServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0755B27DFC11200F83AF4 /* MoviesServerModel.swift */; };
@@ -30,6 +27,9 @@
 		7CE0756A27DFC15C00F83AF4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0756927DFC15C00F83AF4 /* NetworkError.swift */; };
 		7CE0756C27DFC16700F83AF4 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0756B27DFC16700F83AF4 /* NetworkServices.swift */; };
 		7CE0756E27DFC18200F83AF4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0756D27DFC18200F83AF4 /* Utils.swift */; };
+		7CE0757727E2428100F83AF4 /* CustomMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0757627E2428100F83AF4 /* CustomMainView.swift */; };
+		7CE0757927E2428D00F83AF4 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0757827E2428D00F83AF4 /* CustomNavigationView.swift */; };
+		7CE0757B27E2429900F83AF4 /* HeaderComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE0757A27E2429900F83AF4 /* HeaderComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +42,6 @@
 		7CE0754327DFBFA000F83AF4 /* ControlFlujo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlujo.swift; sourceTree = "<group>"; };
 		7CE0754527DFBFAA00F83AF4 /* FashionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionContentView.swift; sourceTree = "<group>"; };
 		7CE0754727DFBFBA00F83AF4 /* DetailFashionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFashionContentView.swift; sourceTree = "<group>"; };
-		7CE0754927DFBFCC00F83AF4 /* HeaderComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponents.swift; sourceTree = "<group>"; };
-		7CE0754B27DFBFD400F83AF4 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
-		7CE0754D27DFBFDC00F83AF4 /* CustomMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainView.swift; sourceTree = "<group>"; };
 		7CE0755727DFC0EE00F83AF4 /* BaseVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVP.swift; sourceTree = "<group>"; };
 		7CE0755927DFC10900F83AF4 /* MoviesBussinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesBussinesModel.swift; sourceTree = "<group>"; };
 		7CE0755B27DFC11200F83AF4 /* MoviesServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesServerModel.swift; sourceTree = "<group>"; };
@@ -57,6 +54,9 @@
 		7CE0756927DFC15C00F83AF4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		7CE0756B27DFC16700F83AF4 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		7CE0756D27DFC18200F83AF4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7CE0757627E2428100F83AF4 /* CustomMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainView.swift; sourceTree = "<group>"; };
+		7CE0757827E2428D00F83AF4 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		7CE0757A27E2429900F83AF4 /* HeaderComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE0755127DFC0A900F83AF4 /* NetworkService */,
-				7CE0753727DFBF0700F83AF4 /* Components */,
+				7CE0757527E2425900F83AF4 /* Components */,
 				7CE0753827DFBF2900F83AF4 /* PracticeView */,
 				7CE0752927DFBEBA00F83AF4 /* NttDataMoviesApp.swift */,
 				7CE0752B27DFBEBA00F83AF4 /* ContentView.swift */,
@@ -106,16 +106,6 @@
 				7CE0753027DFBEBD00F83AF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7CE0753727DFBF0700F83AF4 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				7CE0754927DFBFCC00F83AF4 /* HeaderComponents.swift */,
-				7CE0754B27DFBFD400F83AF4 /* CustomNavigationView.swift */,
-				7CE0754D27DFBFDC00F83AF4 /* CustomMainView.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		7CE0753827DFBF2900F83AF4 /* PracticeView */ = {
@@ -204,6 +194,16 @@
 			path = BaseViper;
 			sourceTree = "<group>";
 		};
+		7CE0757527E2425900F83AF4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7CE0757627E2428100F83AF4 /* CustomMainView.swift */,
+				7CE0757827E2428D00F83AF4 /* CustomNavigationView.swift */,
+				7CE0757A27E2429900F83AF4 /* HeaderComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,16 +277,16 @@
 				7CE0756027DFC12600F83AF4 /* MoviesAssembly.swift in Sources */,
 				7CE0754827DFBFBA00F83AF4 /* DetailFashionContentView.swift in Sources */,
 				7CE0752C27DFBEBA00F83AF4 /* ContentView.swift in Sources */,
-				7CE0754A27DFBFCC00F83AF4 /* HeaderComponents.swift in Sources */,
-				7CE0754C27DFBFD400F83AF4 /* CustomNavigationView.swift in Sources */,
 				7CE0756627DFC14100F83AF4 /* MoviesProvider.swift in Sources */,
+				7CE0757727E2428100F83AF4 /* CustomMainView.swift in Sources */,
 				7CE0755827DFC0EE00F83AF4 /* BaseVP.swift in Sources */,
 				7CE0756827DFC14C00F83AF4 /* MoviesView.swift in Sources */,
+				7CE0757927E2428D00F83AF4 /* CustomNavigationView.swift in Sources */,
 				7CE0754227DFBF9200F83AF4 /* MainView.swift in Sources */,
+				7CE0757B27E2429900F83AF4 /* HeaderComponents.swift in Sources */,
 				7CE0754627DFBFAA00F83AF4 /* FashionContentView.swift in Sources */,
 				7CE0756C27DFC16700F83AF4 /* NetworkServices.swift in Sources */,
 				7CE0755E27DFC11C00F83AF4 /* MoviesViewModel.swift in Sources */,
-				7CE0754E27DFBFDC00F83AF4 /* CustomMainView.swift in Sources */,
 				7CE0754427DFBFA000F83AF4 /* ControlFlujo.swift in Sources */,
 				7CE0755C27DFC11200F83AF4 /* MoviesServerModel.swift in Sources */,
 				7CE0752A27DFBEBA00F83AF4 /* NttDataMoviesApp.swift in Sources */,

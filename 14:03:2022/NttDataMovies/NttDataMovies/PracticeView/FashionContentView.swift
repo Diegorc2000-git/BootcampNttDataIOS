@@ -10,7 +10,7 @@ import SwiftUI
 struct FashionContentView: View {
 	var body: some View {
 		NavigationView {
-			VStack(spacing: 20){
+			VStack(spacing: 20) {
 				CustomNavigationView()
 				CustomMainView()
 			}.navigationBarHidden(true)
