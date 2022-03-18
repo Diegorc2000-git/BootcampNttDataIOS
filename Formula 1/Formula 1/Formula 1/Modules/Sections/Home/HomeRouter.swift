@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeRouterProtocol: BaseRouterProtocol {
-	func navigateToMoreInformation()
+	
 }
 
 final class HomeRouter: BaseRouter {
@@ -18,8 +18,5 @@ final class HomeRouter: BaseRouter {
 }
 
 extension HomeRouter: HomeRouterProtocol {
-	func navigateToMoreInformation() {
-		print("ESTO ES LA OSTIA")
-	}
 	
 }

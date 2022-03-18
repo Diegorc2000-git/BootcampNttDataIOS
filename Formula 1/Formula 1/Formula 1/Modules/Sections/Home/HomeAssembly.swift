@@ -18,7 +18,7 @@ final class HomeAssembly: BaseAssembly {
 	static func view() -> HomeViewController {
 		let view = HomeViewController()
 		
-		let viper = BaseAssembly.assembly(baseView: view,
+		_ = BaseAssembly.assembly(baseView: view,
 										  presenter: HomePresenter.self,
 										  router: HomeRouter.self,
 										  interactor: HomeInteractor.self)

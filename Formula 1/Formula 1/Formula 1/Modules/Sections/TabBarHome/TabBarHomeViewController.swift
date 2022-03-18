@@ -7,11 +7,20 @@
 
 import UIKit
 
+protocol TabBarHomeViewProtocol: BaseViewProtocol {
+
+}
+
 class TabBarHomeViewController: UITabBarController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
-    }
+	}
+	
 
+}
+
+extension TabBarHomeViewController: TabBarHomeViewProtocol {
+	
 }

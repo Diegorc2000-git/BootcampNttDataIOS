@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol NavigationBarManagerDelegate: class {
+protocol NavigationBarManagerDelegate: AnyObject {
 	func navigationBarLeftButtonItemPressed(buttonItem: NavigationBarButtonItem)
 	func navigationBarRightButtonItemPressed(buttonItem: NavigationBarButtonItem)
 	func backNavigationBarButtonPressed()
@@ -33,15 +33,7 @@ class NavigationBarManager {
 			case .native:
 				self.navigationController?.setNavigationBarHidden(isHidden, animated: true)
 			case .customLarge, .customNormal:
-				if !isHidden {
-					constraintTopMainViewToScreen?.isActive = false
-					constraintTopMainViewToNavigationBar?.isActive = true
-				} else {
-					constraintTopMainViewToScreen?.isActive = true
-					constraintTopMainViewToNavigationBar?.isActive = true
-				}
 				self.customNavigationBar?.isHidden = isHidden
-				self.customNavigationBar?.layoutIfNeeded()
 			}
 		}
 	}

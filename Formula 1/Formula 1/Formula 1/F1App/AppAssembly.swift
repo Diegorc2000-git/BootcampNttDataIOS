@@ -15,10 +15,11 @@ protocol AppAssemblyProtocol {
 final class AppAssembly: AppAssemblyProtocol {
 	
 	private var initialVC = UIViewController()
+	
 	internal func showInitialApp(window: UIWindow) {
 		self.customTabBar()
 		self.customNavigationBar()
-		initialVC = TabBarHomeAssembly.view()
+		initialVC = SplashAssembly.view()
 		window.rootViewController = initialVC
 		window.makeKeyAndVisible()
 	}
@@ -33,7 +34,7 @@ final class AppAssembly: AppAssemblyProtocol {
 	}
 	
 	private func customNavigationBar() {
-		let navigationBar = NavigationBarModel()
+		_ = NavigationBarModel()
 		
 		
 	}

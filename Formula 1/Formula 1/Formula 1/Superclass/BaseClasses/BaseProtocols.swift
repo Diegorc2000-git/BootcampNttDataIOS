@@ -8,7 +8,7 @@
 import Foundation
 
 //MARK: - View
-protocol BaseViewProtocol: class {
+protocol BaseViewProtocol: AnyObject {
 	
 }
 
@@ -17,7 +17,7 @@ extension BaseViewProtocol {
 }
 
 //MARK: - Presenter
-protocol BasePresenterProtocol: class {
+protocol BasePresenterProtocol: AnyObject {
 	func viewDidLoad()
 	func backNavigationBarButtonPressed()
 }
@@ -27,7 +27,7 @@ extension BasePresenterProtocol {
 }
 
 //MARK: - Interactor
-protocol BaseInteractorInputProtocol: class {
+protocol BaseInteractorInputProtocol: AnyObject {
 	
 }
 
@@ -35,7 +35,7 @@ extension BaseInteractorInputProtocol {
 
 }
 
-protocol BaseInteractorOutputProtocol: class {
+protocol BaseInteractorOutputProtocol: AnyObject {
 	
 }
 
@@ -43,7 +43,7 @@ extension BaseInteractorOutputProtocol {
 	
 }
 //MARK: - Router
-protocol BaseRouterProtocol: class {
+protocol BaseRouterProtocol: AnyObject {
 	func backToPreviousScreen()
 	func cancelFlow()
 	func getNavigationType() -> BaseRouter.NavigationType?
@@ -53,7 +53,7 @@ extension BaseRouterProtocol {
 	
 }
 
-protocol BaseRouterDelegate: class {
+protocol BaseRouterDelegate: AnyObject {
 	func navigationDone()
 }
 
@@ -62,6 +62,6 @@ extension BaseRouterDelegate {
 }
 
 //MARK: - Provider
-protocol BaseProviderDelegate: class {
+protocol BaseProviderDelegate: AnyObject {
 	
 }

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D4BD26DDC693CE04BA80225 /* libPods-Formula 1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DC23872AED62D101585117 /* libPods-Formula 1.a */; };
+		7C75D7B127E3A7F20039673A /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7B027E3A7F20039673A /* SplashPresenter.swift */; };
+		7C75D7B327E3A7FC0039673A /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7B227E3A7FC0039673A /* SplashInteractor.swift */; };
+		7C75D7B527E3A8040039673A /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7B427E3A8040039673A /* SplashRouter.swift */; };
+		7C75D7B727E3A80F0039673A /* SplashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7B627E3A80F0039673A /* SplashAssembly.swift */; };
+		7C75D7BA27E3A8270039673A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7B827E3A8270039673A /* SplashViewController.swift */; };
+		7C75D7BB27E3A8270039673A /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D7B927E3A8270039673A /* SplashViewController.xib */; };
+		7C75D7C527E492F70039673A /* pitStop.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D7C427E492F70039673A /* pitStop.json */; };
+		7C75D7CE27E494450039673A /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7CD27E494450039673A /* LocalizedKeys.swift */; };
+		7C75D7D427E4952A0039673A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D7D627E4952A0039673A /* Localizable.strings */; };
 		7CF03DF427CE86F4006D5F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF03DF327CE86F4006D5F95 /* AppDelegate.swift */; };
 		7CF03DFD27CE86F7006D5F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF03DFC27CE86F7006D5F95 /* Assets.xcassets */; };
 		7CF03E0027CE86F7006D5F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF03DFE27CE86F7006D5F95 /* LaunchScreen.storyboard */; };
@@ -59,6 +69,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B6E5149D0159C83F9AA635 /* Pods-Formula 1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula 1.release.xcconfig"; path = "Target Support Files/Pods-Formula 1/Pods-Formula 1.release.xcconfig"; sourceTree = "<group>"; };
+		47B341C1749FD782D01C3082 /* Pods-Formula 1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula 1.debug.xcconfig"; path = "Target Support Files/Pods-Formula 1/Pods-Formula 1.debug.xcconfig"; sourceTree = "<group>"; };
+		7C75D7B027E3A7F20039673A /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		7C75D7B227E3A7FC0039673A /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		7C75D7B427E3A8040039673A /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		7C75D7B627E3A80F0039673A /* SplashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembly.swift; sourceTree = "<group>"; };
+		7C75D7B827E3A8270039673A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		7C75D7B927E3A8270039673A /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		7C75D7C427E492F70039673A /* pitStop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pitStop.json; sourceTree = "<group>"; };
+		7C75D7CD27E494450039673A /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
+		7C75D7D327E495090039673A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7C75D7D527E4952A0039673A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7C75D7D727E4952F0039673A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7CF03DF027CE86F4006D5F95 /* Formula 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Formula 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF03DF327CE86F4006D5F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF03DFC27CE86F7006D5F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +133,7 @@
 		7CFF453827CFF105006648EF /* BaseComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseComponent.swift; sourceTree = "<group>"; };
 		7CFF453A27CFF13B006648EF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7CFF453F27CFFCF4006648EF /* pilotsJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pilotsJson.json; sourceTree = "<group>"; };
+		F6DC23872AED62D101585117 /* libPods-Formula 1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Formula 1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,17 +141,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4BD26DDC693CE04BA80225 /* libPods-Formula 1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D280333BF8160AE8D43458C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC23872AED62D101585117 /* libPods-Formula 1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64E2893D2D26AD066C65E23E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47B341C1749FD782D01C3082 /* Pods-Formula 1.debug.xcconfig */,
+				15B6E5149D0159C83F9AA635 /* Pods-Formula 1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C75D7AF27E3A7CC0039673A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D7B927E3A8270039673A /* SplashViewController.xib */,
+				7C75D7B827E3A8270039673A /* SplashViewController.swift */,
+				7C75D7B027E3A7F20039673A /* SplashPresenter.swift */,
+				7C75D7B227E3A7FC0039673A /* SplashInteractor.swift */,
+				7C75D7B427E3A8040039673A /* SplashRouter.swift */,
+				7C75D7B627E3A80F0039673A /* SplashAssembly.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		7C75D7BE27E3ADBF0039673A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D7C627E493100039673A /* Animation */,
+				7CF03DFC27CE86F7006D5F95 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7C75D7C027E4920B0039673A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D7CD27E494450039673A /* LocalizedKeys.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7C75D7C627E493100039673A /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D7C427E492F70039673A /* pitStop.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		7C75D7C727E493250039673A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D7D627E4952A0039673A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7CF03DE727CE86F4006D5F95 = {
 			isa = PBXGroup;
 			children = (
 				7CF03DF227CE86F4006D5F95 /* Formula 1 */,
 				7CF03DF127CE86F4006D5F95 /* Products */,
+				7C75D7C727E493250039673A /* Resources */,
+				64E2893D2D26AD066C65E23E /* Pods */,
+				3D280333BF8160AE8D43458C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,12 +233,13 @@
 		7CF03DF227CE86F4006D5F95 /* Formula 1 */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D7C027E4920B0039673A /* Utils */,
 				7CF03E0A27CE88A3006D5F95 /* Modules */,
 				7CFF452327CFD412006648EF /* F1UX */,
 				7CFF452127CFD3E2006648EF /* Superclass */,
 				7CF03E0727CE8783006D5F95 /* F1App */,
 				7CF03E1327CE8928006D5F95 /* BaseViper */,
-				7CF03DFC27CE86F7006D5F95 /* Assets.xcassets */,
+				7C75D7BE27E3ADBF0039673A /* Assets */,
 				7CF03DFE27CE86F7006D5F95 /* LaunchScreen.storyboard */,
 				7CF03E0127CE86F7006D5F95 /* Info.plist */,
 			);
@@ -180,6 +272,7 @@
 				7CFF44F327CF8DF7006648EF /* Racing */,
 				7CF03E2127CE9422006D5F95 /* Video */,
 				7CF03E1627CE8C22006D5F95 /* Home */,
+				7C75D7AF27E3A7CC0039673A /* Splash */,
 				7CFF451427CF9BCA006648EF /* NavigationBarHome */,
 				7CF03E0C27CE88B8006D5F95 /* TabBarHome */,
 			);
@@ -347,6 +440,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CF03E0427CE86F7006D5F95 /* Build configuration list for PBXNativeTarget "Formula 1" */;
 			buildPhases = (
+				EEEFED8779B07A12837E4C6E /* [CP] Check Pods Manifest.lock */,
 				7CF03DEC27CE86F4006D5F95 /* Sources */,
 				7CF03DED27CE86F4006D5F95 /* Frameworks */,
 				7CF03DEE27CE86F4006D5F95 /* Resources */,
@@ -382,6 +476,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 7CF03DE727CE86F4006D5F95;
 			productRefGroup = 7CF03DF127CE86F4006D5F95 /* Products */;
@@ -401,6 +496,8 @@
 				7CFF454027CFFCF4006648EF /* pilotsJson.json in Resources */,
 				7CF03E0027CE86F7006D5F95 /* LaunchScreen.storyboard in Resources */,
 				7CF03DFD27CE86F7006D5F95 /* Assets.xcassets in Resources */,
+				7C75D7D427E4952A0039673A /* Localizable.strings in Resources */,
+				7C75D7BB27E3A8270039673A /* SplashViewController.xib in Resources */,
 				7CFF450D27CF9317006648EF /* ProfileViewController.xib in Resources */,
 				7CFF44F727CF8E18006648EF /* RacingViewController.xib in Resources */,
 				7CFF451E27CFA39D006648EF /* NavigationBarView.xib in Resources */,
@@ -408,10 +505,36 @@
 				7CF03E2527CE9436006D5F95 /* VideoViewController.xib in Resources */,
 				7CFF450227CF91A3006648EF /* StandingViewController.xib in Resources */,
 				7CF03E1A27CE8C65006D5F95 /* HomeViewController.xib in Resources */,
+				7C75D7C527E492F70039673A /* pitStop.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EEEFED8779B07A12837E4C6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Formula 1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CF03DEC27CE86F4006D5F95 /* Sources */ = {
@@ -429,9 +552,11 @@
 				7CFF452B27CFD4AC006648EF /* BaseRouter.swift in Sources */,
 				7CFF44F927CF8E28006648EF /* RacingAssembly.swift in Sources */,
 				7CFF44FD27CF8E3F006648EF /* RacingRouter.swift in Sources */,
+				7C75D7B127E3A7F20039673A /* SplashPresenter.swift in Sources */,
 				7CF03E2727CE9443006D5F95 /* VideoPresenter.swift in Sources */,
 				7CF03E0927CE87A1006D5F95 /* AppAssembly.swift in Sources */,
 				7CFF451627CF9BF6006648EF /* NavigationBarModel.swift in Sources */,
+				7C75D7B327E3A7FC0039673A /* SplashInteractor.swift in Sources */,
 				7CFF450C27CF9317006648EF /* ProfileViewController.swift in Sources */,
 				7CFF452D27CFD4B8006648EF /* BaseAssembly.swift in Sources */,
 				7CF03E1227CE88E5006D5F95 /* TabBarHomeAssembly.swift in Sources */,
@@ -445,28 +570,42 @@
 				7CF03E2027CE8DDF006D5F95 /* HomeRouter.swift in Sources */,
 				7CFF453727CFE3CA006648EF /* HomeInteractor.swift in Sources */,
 				7CFF453527CFDB33006648EF /* BaseInteractor.swift in Sources */,
+				7C75D7CE27E494450039673A /* LocalizedKeys.swift in Sources */,
 				7CFF453B27CFF13B006648EF /* UIView+Extension.swift in Sources */,
 				7CF03E2B27CE9458006D5F95 /* VideoRouter.swift in Sources */,
 				7CF03E2927CE944E006D5F95 /* VideoAssembly.swift in Sources */,
 				7CFF450427CF91AE006648EF /* StandingAssembly.swift in Sources */,
 				7CFF451A27CFA2C7006648EF /* NavigationBarManager.swift in Sources */,
+				7C75D7B727E3A80F0039673A /* SplashAssembly.swift in Sources */,
 				7CFF451327CF933B006648EF /* ProfileRouter.swift in Sources */,
 				7CFF44FB27CF8E33006648EF /* RacingPresenter.swift in Sources */,
 				7CF03E2427CE9436006D5F95 /* VideoViewController.swift in Sources */,
+				7C75D7B527E3A8040039673A /* SplashRouter.swift in Sources */,
 				7CFF44F627CF8E18006648EF /* RacingViewController.swift in Sources */,
 				7CFF452027CFB1C6006648EF /* BaseView.swift in Sources */,
 				7CFF450127CF91A3006648EF /* StandingViewController.swift in Sources */,
 				7CF03E1E27CE8DD4006D5F95 /* HomePresenter.swift in Sources */,
+				7C75D7BA27E3A8270039673A /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7C75D7D627E4952A0039673A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C75D7D527E4952A0039673A /* en */,
+				7C75D7D727E4952F0039673A /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		7CF03DFE27CE86F7006D5F95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7CF03DFF27CE86F7006D5F95 /* Base */,
+				7C75D7D327E495090039673A /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -478,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -539,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -592,6 +733,7 @@
 		};
 		7CF03E0527CE86F7006D5F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B341C1749FD782D01C3082 /* Pods-Formula 1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -620,6 +762,7 @@
 		};
 		7CF03E0627CE86F7006D5F95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B6E5149D0159C83F9AA635 /* Pods-Formula 1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

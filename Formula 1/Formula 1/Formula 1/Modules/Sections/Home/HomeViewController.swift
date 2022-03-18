@@ -8,28 +8,26 @@
 import UIKit
 
 protocol HomeViewProtocol: BaseViewProtocol {
-	func setNavigationBar(title: String)
+
 }
 
 class HomeViewController: BaseView {
 
+	@IBOutlet weak var navigationBar: UIView!
+	@IBOutlet weak var iconNavBar: UIImageView!
+	
 	private var presenter: HomePresenterProtocol? { return super.basePresenter as? HomePresenterProtocol }
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		self.setupView()
     }
 	
-	override func navigationBarRightButtonItemPressed(buttonItem: NavigationBarButtonItem) {
-		super.navigationBarRightButtonItemPressed(buttonItem: buttonItem)
-		
-		if buttonItem.type == .information {
-			self.presenter?.informationButtonPressed()
-		}
+	func setupView() {
+		self.navigationBar.backgroundColor = CustomColor.viewPrimary.uiColor
+		self.iconNavBar.image = UIImage(named: "logoF1")
 	}
 
-	func setNavigationBar(title: String) {
-		self.navigationBarManager?.configureCustomNavigationBar(model: NavigationBarModel(title: title, arrayRightButtons: [.information], backGroundColor: CustomColor.viewPrimary.uiColor, isTransparent: false))
-	}
 }
 
 extension HomeViewController: HomeViewProtocol {

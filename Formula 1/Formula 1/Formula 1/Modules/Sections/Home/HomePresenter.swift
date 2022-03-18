@@ -8,7 +8,6 @@
 import Foundation
 
 protocol HomePresenterProtocol: BasePresenterProtocol {
-	func informationButtonPressed()
 }
 
 protocol HomeInteractorOutputProtocol: BaseInteractorOutputProtocol {
@@ -26,14 +25,10 @@ final class HomePresenter: BasePresenter {
 	}
 	
 	func setupViewModel() {
-		view?.setNavigationBar(title: "News")
+		
 	}
 }
 
 extension HomePresenter: HomePresenterProtocol {
-	
-	func informationButtonPressed() {
-		router?.navigateToMoreInformation()
-	}
 	
 }

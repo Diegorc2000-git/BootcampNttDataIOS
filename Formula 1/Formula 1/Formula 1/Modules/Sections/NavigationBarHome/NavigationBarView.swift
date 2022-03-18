@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CustomNavigationBarDelegate: class {
+protocol CustomNavigationBarDelegate: AnyObject {
 	func leftButtonPressed(buttonItemPressed: NavigationBarButtonItem)
 	func rightButtonPressed(buttonItemPressed: NavigationBarButtonItem)
 	func navigationBackButtonPressed(buttonItemPressed: NavigationBarButtonItem)
@@ -20,8 +20,7 @@ class NavigationBarView: BaseComponent {
 	@IBOutlet weak var iconCenter: UIImageView!
 	@IBOutlet weak var labelTitle: UILabel!
 	
-	@IBOutlet weak var largeNavigationBarTitleBottomConstraints: NSLayoutConstraint!
-	@IBOutlet weak var normalNavigationBarTitleBottomConstraint: NSLayoutConstraint!
+	@IBOutlet weak var iconToBottomSuperviewConstraint: NSLayoutConstraint!
 	
 	weak var delegate: CustomNavigationBarDelegate?
 	var viewModel: NavigationBarModel?
@@ -54,8 +53,13 @@ class NavigationBarView: BaseComponent {
 	}
 
 	private func configureCustomNavBar(viewModel: NavigationBarModel) {
-		self.largeNavigationBarTitleBottomConstraints.isActive = false
-		self.normalNavigationBarTitleBottomConstraint.isActive = true
+		if viewModel.title == nil {
+			self.iconToBottomSuperviewConstraint.isActive = true
+		
+		} else {
+			self.iconToBottomSuperviewConstraint.isActive = false
+		}
+	   
 		leftButton.isHidden = false
 		if let arrayLeftButton = viewModel.arrayLeftButtons {
 			leftButton.setImage(arrayLeftButton.first?.image, for: .normal)
@@ -69,36 +73,40 @@ class NavigationBarView: BaseComponent {
 		iconCenter.isHidden = false
 		iconCenter.image = viewModel.iconCenter
 		labelTitle.isHidden = true
+		
 	}
 	
 	private func configureLargeNavBar(viewModel: NavigationBarModel) {
-//		self.normalNavigationBarTitleBottomConstraint.isActive = false
-		self.largeNavigationBarTitleBottomConstraints.isActive = true
-	   
+		
 		leftButton.isHidden = false
 		if let arrayLeftButton = viewModel.arrayLeftButtons {
 			leftButton.setImage(arrayLeftButton.first?.image, for: .normal)
-			leftButton.tintColor = .black
+			//leftButton.tintColor = CustomColor.
 		}
-	   
-		rightButton.isHidden = true
-		if let rightButtonModel = viewModel.arrayRightButtons?.first {
-			rightButton.isHidden = false
-			rightButton.tintColor = .black
-			switch rightButtonModel.resourceType {
-			case .freeText:
-				rightButton.setTitle(rightButtonModel.text?.uppercased(), for: .normal)
-			case .image:
-				rightButton.setImage(rightButtonModel.image, for: .normal)
-
+		rightButton.isHidden = false
+		
+		//rightButton.tintColor = .navyBlue
+		if let arrayRightButton = viewModel.arrayRightButtons {
+			rightButton.setImage(arrayRightButton.first?.image, for: .normal)
+			if let buttonText = arrayRightButton.first?.text {
+				rightButton.setTitle(buttonText, for: .normal)
+			} else {
+				rightButton.setTitle("Cancelar".uppercased(), for: .normal)
 			}
-			rightButton.tintColor = .black
+			
+			//rightButton.tintColor = .navyBlue
 		}
 		
 		iconCenter.isHidden = true
+		if let img = viewModel.iconCenter {
+			iconCenter.image = img
+			iconCenter.isHidden = false
+		}
+		
 		labelTitle.isHidden = false
 		labelTitle.text = viewModel.title
-		labelTitle.textColor = .black
+		labelTitle.font = UIFont(name: "Cartero-Regular", size: 24)
+		labelTitle.textColor = CustomColor.textHighlighted.uiColor
 		self.labelTitle.text = viewModel.title
 	}
 	
