@@ -15,38 +15,38 @@ class TabBarHomeAssembly {
 	
 		let homeVc = HomeAssembly.navigationController()
 		let homeButton = UITabBarItem(
-			title: "Latest",
-			image: UIImage(named: "Latest")?.withRenderingMode(.alwaysOriginal),
-			selectedImage: UIImage(named: "Latest")?.withRenderingMode(.alwaysTemplate))
+			title: LocalizedKeys.TabBar.latest,
+			image: UIImage(named: ImageAndIconConstants.latest)?.withRenderingMode(.alwaysOriginal),
+			selectedImage: UIImage(named: ImageAndIconConstants.latest)?.withRenderingMode(.alwaysTemplate))
 		
 		homeVc.tabBarItem = homeButton
 		
 		let videoVc = VideoAssembly.navigation()
 		let videoButton = UITabBarItem(
-			title: "Video",
-			image: UIImage(named: "Video")?.withRenderingMode(.alwaysOriginal),
-			selectedImage: UIImage(named: "Video")?.withRenderingMode(.alwaysTemplate))
+			title: LocalizedKeys.TabBar.video,
+			image: UIImage(named: ImageAndIconConstants.video)?.withRenderingMode(.alwaysOriginal),
+			selectedImage: UIImage(named: ImageAndIconConstants.video)?.withRenderingMode(.alwaysTemplate))
 		
 		videoVc.tabBarItem = videoButton
 		
 		let racingVc = RacingAssembly.navigation()
-		let racingButton = UITabBarItem(title: "Racing",
-										image: UIImage(named: "Racing")?.withRenderingMode(.alwaysOriginal),
-										selectedImage: UIImage(named: "Racing")?.withRenderingMode(.alwaysTemplate))
+		let racingButton = UITabBarItem(title: LocalizedKeys.TabBar.racing,
+										image: UIImage(named: ImageAndIconConstants.racing)?.withRenderingMode(.alwaysOriginal),
+										selectedImage: UIImage(named: ImageAndIconConstants.racing)?.withRenderingMode(.alwaysTemplate))
 
 		racingVc.tabBarItem = racingButton
 		
 		let standingVc = StandingAssembly.navigation()
-		let standingButton = UITabBarItem(title: "Standing",
-										image: UIImage(named: "Standing")?.withRenderingMode(.alwaysOriginal),
-										selectedImage: UIImage(named: "Standing")?.withRenderingMode(.alwaysTemplate))
+		let standingButton = UITabBarItem(title: LocalizedKeys.TabBar.standing,
+										image: UIImage(named: ImageAndIconConstants.standing)?.withRenderingMode(.alwaysOriginal),
+										selectedImage: UIImage(named: ImageAndIconConstants.standing)?.withRenderingMode(.alwaysTemplate))
 
 		standingVc.tabBarItem = standingButton
 		
 		let profileVc = ProfileAssembly.navigation()
-		let profileButton = UITabBarItem(title: "Profile",
-										image: UIImage(named: "Profile")?.withRenderingMode(.alwaysOriginal),
-										selectedImage: UIImage(named: "Profile")?.withRenderingMode(.alwaysTemplate))
+		let profileButton = UITabBarItem(title: LocalizedKeys.TabBar.profile,
+										image: UIImage(named: ImageAndIconConstants.profile)?.withRenderingMode(.alwaysOriginal),
+										selectedImage: UIImage(named: ImageAndIconConstants.profile)?.withRenderingMode(.alwaysTemplate))
 
 		profileVc.tabBarItem = profileButton
 		

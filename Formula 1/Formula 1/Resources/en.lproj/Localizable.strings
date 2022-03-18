@@ -1,2 +1,8 @@
+// TabBar
+"tab_bar_home_latest" = "Latest";
+"tab_bar_home_video" = "Video";
+"tab_bar_home_racing" = "Racing";
+"tab_bar_home_standing" = "Standing";
+"tab_bar_home_profile" = "Profile";
 
 

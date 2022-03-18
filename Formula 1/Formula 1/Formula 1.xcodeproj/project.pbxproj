@@ -17,6 +17,7 @@
 		7C75D7C527E492F70039673A /* pitStop.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D7C427E492F70039673A /* pitStop.json */; };
 		7C75D7CE27E494450039673A /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7CD27E494450039673A /* LocalizedKeys.swift */; };
 		7C75D7D427E4952A0039673A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C75D7D627E4952A0039673A /* Localizable.strings */; };
+		7C75D7DA27E4AD8E0039673A /* ImageAndIconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75D7D927E4AD8E0039673A /* ImageAndIconConstants.swift */; };
 		7CF03DF427CE86F4006D5F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF03DF327CE86F4006D5F95 /* AppDelegate.swift */; };
 		7CF03DFD27CE86F7006D5F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF03DFC27CE86F7006D5F95 /* Assets.xcassets */; };
 		7CF03E0027CE86F7006D5F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF03DFE27CE86F7006D5F95 /* LaunchScreen.storyboard */; };
@@ -82,6 +83,7 @@
 		7C75D7D327E495090039673A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7C75D7D527E4952A0039673A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7C75D7D727E4952F0039673A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7C75D7D927E4AD8E0039673A /* ImageAndIconConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndIconConstants.swift; sourceTree = "<group>"; };
 		7CF03DF027CE86F4006D5F95 /* Formula 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Formula 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF03DF327CE86F4006D5F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF03DFC27CE86F7006D5F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		7C75D7BE27E3ADBF0039673A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7C75D7D827E4AD6B0039673A /* ImageAndIcons */,
 				7C75D7C627E493100039673A /* Animation */,
 				7CF03DFC27CE86F7006D5F95 /* Assets.xcassets */,
 			);
@@ -209,6 +212,14 @@
 				7C75D7D627E4952A0039673A /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C75D7D827E4AD6B0039673A /* ImageAndIcons */ = {
+			isa = PBXGroup;
+			children = (
+				7C75D7D927E4AD8E0039673A /* ImageAndIconConstants.swift */,
+			);
+			path = ImageAndIcons;
 			sourceTree = "<group>";
 		};
 		7CF03DE727CE86F4006D5F95 = {
@@ -557,6 +568,7 @@
 				7CF03E0927CE87A1006D5F95 /* AppAssembly.swift in Sources */,
 				7CFF451627CF9BF6006648EF /* NavigationBarModel.swift in Sources */,
 				7C75D7B327E3A7FC0039673A /* SplashInteractor.swift in Sources */,
+				7C75D7DA27E4AD8E0039673A /* ImageAndIconConstants.swift in Sources */,
 				7CFF450C27CF9317006648EF /* ProfileViewController.swift in Sources */,
 				7CFF452D27CFD4B8006648EF /* BaseAssembly.swift in Sources */,
 				7CF03E1227CE88E5006D5F95 /* TabBarHomeAssembly.swift in Sources */,

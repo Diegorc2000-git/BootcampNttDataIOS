@@ -1,1 +1,6 @@
-"x_x_x" = "x";
+// TabBar
+"tab_bar_home_latest" = "";
+"tab_bar_home_video" = "Video";
+"tab_bar_home_racing" = "Carreras";
+"tab_bar_home_standing" = "Posición";
+"tab_bar_home_profile" = "Perfil";
